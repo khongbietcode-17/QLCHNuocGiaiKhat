@@ -8,56 +8,56 @@ using System.Windows.Forms;
 
 namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 {
+
+
     public partial class FormMain_QuanLy: Form
     {
+        private string _hoten;
         FormQLNhanVien QLNhanVien;
         FormQLNhaCungCap QLNhaCungCap;
         FormQLSanPham QLSanPham;
         FormThongKeDoanhSo ThongKeDoanhSo;
-        public FormMain_QuanLy()
+        public FormMain_QuanLy(string hoten)
         {
             InitializeComponent();
+            _hoten = hoten;
+            lblTen.Text = "Xin chào, " + _hoten; // Hiển thị tên người dùng vào lblTen
         }
 
         private void FormMain_QuanLy_Load(object sender, EventArgs e)
         {
 
         }
-        private string _username;
-        public FormMain_QuanLy(string username)
-        {
-            InitializeComponent();
-            _username = username;
-            
-        }
+     
+
         // Code Chuyển Động 
         bool sidebarExpand = true;
         private void siderbarTransition_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
             {
-                flowLayoutPanel1.Width -= 10;
-                if(flowLayoutPanel1.Width <=50)
+                sider.Width -= 10;
+                if(sider.Width <=58)
                 {
                     sidebarExpand = false;
                     siderbarTransition.Stop();
-                    pnQLNCC.Width = flowLayoutPanel1.Width;
-                    pnQLNV.Width = flowLayoutPanel1.Width;
-                    pnQLSP.Width = flowLayoutPanel1.Width;
-                    pnTKDS.Width = flowLayoutPanel1.Width;
+                    pnQLNCC.Width = sider.Width;
+                    pnQLNV.Width = sider.Width;
+                    pnQLSP.Width = sider.Width;
+                    pnTKDS.Width = sider.Width;
                 }
             }
             else
             {
-                flowLayoutPanel1.Width += 10;
-                if(flowLayoutPanel1.Width >= 187)
+                sider.Width += 10;
+                if(sider.Width >= 220)
                 {
                     sidebarExpand = true;
                     siderbarTransition.Stop();
-                    pnQLNCC.Width = flowLayoutPanel1.Width;
-                    pnQLNV.Width = flowLayoutPanel1.Width;
-                    pnQLSP.Width = flowLayoutPanel1.Width;
-                    pnTKDS.Width = flowLayoutPanel1.Width;
+                    pnQLNCC.Width = sider.Width;
+                    pnQLNV.Width = sider.Width;
+                    pnQLSP.Width = sider.Width;
+                    pnTKDS.Width = sider.Width;
 
                 }
             }

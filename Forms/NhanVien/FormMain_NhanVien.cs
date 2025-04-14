@@ -24,7 +24,6 @@ namespace QLCH_NuocGiaiKhat.Forms.NhanVien
         {
             InitializeComponent();
             _username = username;
-
         }
     }
 }

@@ -15,7 +15,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
     public partial class FormDangNhap: Form
     {
         string chuoiketnoi= "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
-
+        private bool matKhauDangAn = true;
         public FormDangNhap()
         {
             InitializeComponent();
@@ -26,6 +26,8 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
         }
 
+
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string taikhoan = txtTaiKhoan.Text.Trim();
@@ -33,28 +35,33 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
-                string query = "SELECT Vaitro FROM Nguoidung WHERE Taikhoan = @tk AND Matkhau = @mk";
+                string query = @"
+SELECT Nguoidung.Vaitro, ThongTinNguoiDung.HoTen 
+FROM Nguoidung
+INNER JOIN ThongTinNguoiDung ON Nguoidung.Id = ThongTinNguoiDung.IdNguoiDung 
+WHERE Nguoidung.Taikhoan = @tk AND Nguoidung.Matkhau = @mk";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@tk", taikhoan);
                 cmd.Parameters.AddWithValue("@mk", matkhau);
 
                 conn.Open();
-                object vaitro = cmd.ExecuteScalar();
-                conn.Close();
-
-                if(vaitro != null)
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
                 {
-                    string vt = vaitro.ToString();
-                    if(vt == "QuanLy")
+                    string vaitro = reader["Vaitro"].ToString();
+                    string hoten = reader["HoTen"].ToString();
+
+                    if (vaitro == "QuanLy")
                     {
-                        FormMain_QuanLy formQL = new FormMain_QuanLy(taikhoan);
+                        FormMain_QuanLy formQL = new FormMain_QuanLy(hoten);
                         this.Hide();
                         formQL.ShowDialog();
                         this.Show();
                     }
-                    else if(vt == "NhanVien")
+                    else if (vaitro == "NhanVien")
                     {
-                        FormMain_NhanVien formNV = new FormMain_NhanVien(taikhoan);
+                        FormMain_NhanVien formNV = new FormMain_NhanVien(hoten);
                         this.Hide();
                         formNV.ShowDialog();
                         this.Show();
@@ -65,7 +72,26 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
                     lblThongBao.Text = "Sai tên đăng nhập hoặc mật khẩu!";
                     lblThongBao.ForeColor = System.Drawing.Color.Red;
                 }
+                reader.Close();
+                conn.Close();
             }
+        }
+
+        private void picEye_Click(object sender, EventArgs e)
+        {
+            matKhauDangAn = !matKhauDangAn;
+
+            txtMatKhau.UseSystemPasswordChar = matKhauDangAn;
+
+            // Đổi hình icon nếu bạn có thêm ảnh mắt mở và mắt đóng
+            picEye.Image = matKhauDangAn
+               ? Properties.Resources.eye // mắt đang ẩn
+               : Properties.Resources.hidden; // mắt đang hiện
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Đóng form hiện tại
         }
     }
 }

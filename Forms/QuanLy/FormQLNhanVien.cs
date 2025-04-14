@@ -16,7 +16,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             InitializeComponent();
         }
-
         private void FormQLNhanVien_Load(object sender, EventArgs e)
         {
             cboVaiTroLoc.SelectedIndex = 0; // Mặc định là Tất cả
@@ -54,7 +53,9 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             FormThemNhanVien form = new FormThemNhanVien();
             if (form.ShowDialog() == DialogResult.OK)
             {
+                
                 LoadNguoiDung(); // Load lại sau khi thêm
+
             }
         }
 
@@ -294,6 +295,11 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             return sb.ToString().Normalize(NormalizationForm.FormC).ToLower();
         }
 
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadNguoiDung(); // Load lại sau khi cập nhật
+        }
 
+ 
     }
 }

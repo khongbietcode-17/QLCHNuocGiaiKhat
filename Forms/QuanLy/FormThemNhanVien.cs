@@ -60,6 +60,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             panel2.Visible = true;
             
         }
+   
         private void btnHoanThanh_Click(object sender, EventArgs e)
         {
             string hoTen = txtHoTen.Text.Trim();
@@ -87,6 +88,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             }
             MessageBox.Show("Đăng ký thành công!");
             this.Close(); // hoặc Reset form nếu muốn
+        
         }
     }
 }
