@@ -122,12 +122,12 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDangNhap.BackColor = System.Drawing.Color.DarkOrange;
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(39, 398);
+            this.btnDangNhap.Location = new System.Drawing.Point(39, 392);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(260, 40);
             this.btnDangNhap.TabIndex = 4;
@@ -138,7 +138,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // lblThongBao
             // 
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(39, 365);
+            this.lblThongBao.Location = new System.Drawing.Point(39, 361);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(260, 27);
             this.lblThongBao.TabIndex = 5;
@@ -158,27 +158,28 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(137, 455);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(92, 452);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.Size = new System.Drawing.Size(159, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Thoát ";
+            this.label1.Text = "ĐÓNG PHẦN MỀM";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(70, 198);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 22.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(39, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 40);
+            this.label2.Size = new System.Drawing.Size(260, 57);
             this.label2.TabIndex = 7;
             this.label2.Text = "ĐĂNG NHẬP";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormDangNhap
             // 
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(340, 492);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

@@ -17,78 +17,31 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         public FormThemNhanVien()
         {
             InitializeComponent();
-            panel2.Visible = false;
-        }
-        private void btnTiep_Click(object sender, EventArgs e)
-        {
-            string taikhoan = txtTaikhoan.Text;
-            string matkhau = txtMatkhau.Text;
-            string vaitro = cboVaitro.Text;
             
-            if (taikhoan == "" || matkhau == "")
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ tài khoản và mật khẩu.");
-                return;
-            }
-
-            using (SqlConnection conn = new SqlConnection(chuoiketnoi))
-            {
-                conn.Open();
-
-                // Kiểm tra trùng tài khoản
-                SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM NguoiDung WHERE Taikhoan = @tk", conn);
-                checkCmd.Parameters.AddWithValue("@tk", taikhoan);
-
-                int count = (int)checkCmd.ExecuteScalar();
-                if (count > 0)
-                {
-                    MessageBox.Show("Tài khoản đã tồn tại. Vui lòng chọn tài khoản khác.");
-                    return;
-                }
-
-                // Thêm tài khoản vào bảng NguoiDung
-                SqlCommand insertCmd = new SqlCommand("INSERT INTO NguoiDung (Taikhoan, Matkhau, Vaitro) OUTPUT INSERTED.ID VALUES (@tk,@mk,@vt)", conn);
-                insertCmd.Parameters.AddWithValue("@tk", taikhoan);
-                insertCmd.Parameters.AddWithValue("@mk", matkhau);
-                insertCmd.Parameters.AddWithValue("@vt", vaitro);
-
-                idNguoiDungTam = (int)insertCmd.ExecuteScalar();
-
-            }
-            // Chuyển sang bước 2
-            panel1.Visible = false;
-            panel2.Visible = true;
-            
+         
         }
-   
-        private void btnHoanThanh_Click(object sender, EventArgs e)
+
+        private void FormThemNhanVien_Load(object sender, EventArgs e)
         {
-            string hoTen = txtHoTen.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string sdt = txtSDT.Text.Trim();
-            string diaChi = txtDiaChi.Text.Trim();
-            if (hoTen == "" || email == "" || sdt == "" || diaChi == "")
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
-                return;
-            }
-            using (SqlConnection conn = new SqlConnection(chuoiketnoi))
-            {
-                conn.Open();
+            FormND_ThemTaiKhoan frmTaiKhoan = new FormND_ThemTaiKhoan(this);
+            frmTaiKhoan.TopLevel = false;
+            frmTaiKhoan.FormBorderStyle = FormBorderStyle.None;
+            frmTaiKhoan.Dock = DockStyle.Fill;
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO ThongTinNguoiDung (IDNguoiDung, Hoten, Email, Sodienthoai, Diachi) " +
-                                                "VALUES (@id, @ht, @em, @sdt, @dc)", conn);
-                cmd.Parameters.AddWithValue("@id", idNguoiDungTam);
-                cmd.Parameters.AddWithValue("@ht", hoTen);
-                cmd.Parameters.AddWithValue("@em", email);
-                cmd.Parameters.AddWithValue("@sdt", sdt);
-                cmd.Parameters.AddWithValue("@dc", diaChi);
+            panel1.Controls.Clear();
+            panel1.Controls.Add(frmTaiKhoan);
+            frmTaiKhoan.Show();
+        }
+        public void ShowFormThongTin(int idNguoiDung)
+        {
+            FormND_ThemThongTin frmThongTin = new FormND_ThemThongTin(idNguoiDung);
+            frmThongTin.TopLevel = false;
+            frmThongTin.FormBorderStyle = FormBorderStyle.None;
+            frmThongTin.Dock = DockStyle.Fill;
 
-                cmd.ExecuteNonQuery();
-            }
-            MessageBox.Show("Đăng ký thành công!");
-            this.Close(); // hoặc Reset form nếu muốn
-        
+            panel1.Controls.Clear();
+            panel1.Controls.Add(frmThongTin);
+            frmThongTin.Show();
         }
     }
 }

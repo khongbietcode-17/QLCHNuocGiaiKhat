@@ -21,7 +21,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             InitializeComponent();
             _hoten = hoten;
-            lblTen.Text = "Xin chào, " + _hoten; // Hiển thị tên người dùng vào lblTen
+            lblTen.Text =_hoten; // Hiển thị tên người dùng vào lblTen
         }
 
         private void FormMain_QuanLy_Load(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             if (sidebarExpand)
             {
                 sider.Width -= 10;
-                if(sider.Width <=58)
+                if(sider.Width <=60)
                 {
                     sidebarExpand = false;
                     siderbarTransition.Stop();
@@ -50,7 +50,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             else
             {
                 sider.Width += 10;
-                if(sider.Width >= 220)
+                if(sider.Width >= 259)
                 {
                     sidebarExpand = true;
                     siderbarTransition.Stop();
@@ -63,26 +63,27 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            siderbarTransition.Start();
-        }
+
         // Xử Lý Nhấn Vào Thanh Chọn 
         private void btnQLNV_Click(object sender, EventArgs e)
         {
-            if(QLNhanVien == null)
+            // Nếu form đã được khởi tạo trước đó, đóng lại để làm mới
+            if (QLNhanVien != null)
             {
-                QLNhanVien = new FormQLNhanVien();
-                QLNhanVien.FormClosed += QLNhanVien_FormClosed;
-                QLNhanVien.MdiParent = this;
-                QLNhanVien.WindowState = FormWindowState.Maximized;
-                QLNhanVien.Show();
+                QLNhanVien.Close();
+                QLNhanVien.Dispose();
             }
-            else
-            {
-                QLNhanVien.Activate();
-            }
+
+            QLNhanVien = new FormQLNhanVien();
+            QLNhanVien.TopLevel = false;
+            QLNhanVien.FormBorderStyle = FormBorderStyle.None;
+            QLNhanVien.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear(); // Xóa form cũ nếu có trong panel
+            panel3.Controls.Add(QLNhanVien);
+            QLNhanVien.Show();
         }
+
         private void QLNhanVien_FormClosed(object sender, FormClosedEventArgs e)
         {
             QLNhanVien = null;
@@ -90,41 +91,74 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            if (ThongKeDoanhSo == null)
+            // Nếu form đã được mở trước đó thì đóng và khởi tạo lại
+            if (ThongKeDoanhSo != null)
             {
-                ThongKeDoanhSo = new FormThongKeDoanhSo();
-                ThongKeDoanhSo.FormClosed += (s, args) => ThongKeDoanhSo = null;
-                ThongKeDoanhSo.MdiParent = this;
-                ThongKeDoanhSo.WindowState = FormWindowState.Maximized;
-                ThongKeDoanhSo.Show();
+                ThongKeDoanhSo.Close();
+                ThongKeDoanhSo.Dispose();
             }
-            else ThongKeDoanhSo.Activate();
+
+            ThongKeDoanhSo = new FormThongKeDoanhSo();
+            ThongKeDoanhSo.TopLevel = false;
+            ThongKeDoanhSo.FormBorderStyle = FormBorderStyle.None;
+            ThongKeDoanhSo.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear(); // Clear panel trước khi add form mới
+            panel3.Controls.Add(ThongKeDoanhSo);
+            ThongKeDoanhSo.Show();
         }
 
         private void btnQLNCC_Click(object sender, EventArgs e)
         {
-            if (QLNhaCungCap == null)
+            // Nếu form đã được mở, đóng lại để làm mới
+            if (QLNhaCungCap != null)
             {
-                QLNhaCungCap = new FormQLNhaCungCap();
-                QLNhaCungCap.FormClosed += (s, args) => QLNhaCungCap = null;
-                QLNhaCungCap.MdiParent = this;
-                QLNhaCungCap.WindowState = FormWindowState.Maximized;
-                QLNhaCungCap.Show();
+                QLNhaCungCap.Close();
+                QLNhaCungCap.Dispose();
             }
-            else QLNhaCungCap.Activate();
+
+            QLNhaCungCap = new FormQLNhaCungCap();
+            QLNhaCungCap.TopLevel = false;
+            QLNhaCungCap.FormBorderStyle = FormBorderStyle.None;
+            QLNhaCungCap.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear(); // Xóa form cũ
+            panel3.Controls.Add(QLNhaCungCap);
+            QLNhaCungCap.Show();
         }
 
         private void btnQLSP_Click(object sender, EventArgs e)
         {
-            if (QLSanPham == null)
+            // Nếu form đã được khởi tạo trước đó, đóng lại để làm mới
+    if (QLSanPham != null)
             {
-                QLSanPham = new FormQLSanPham();
-                QLSanPham.FormClosed += (s, args) => QLSanPham = null;
-                QLSanPham.MdiParent = this;
-                QLSanPham.WindowState = FormWindowState.Maximized;
-                QLSanPham.Show();
+                QLSanPham.Close();
+                QLSanPham.Dispose();
             }
-            else QLSanPham.Activate();
+
+            QLSanPham = new FormQLSanPham();
+            QLSanPham.TopLevel = false;
+            QLSanPham.FormBorderStyle = FormBorderStyle.None;
+            QLSanPham.Dock = DockStyle.Fill;
+
+            panel3.Controls.Clear(); // Xóa form đang hiển thị trong panel
+            panel3.Controls.Add(QLSanPham);
+            QLSanPham.Show();
+        }
+
+        private void lblTen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            siderbarTransition.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         //
     }

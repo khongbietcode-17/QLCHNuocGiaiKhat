@@ -52,6 +52,18 @@
     <Compile Include="Forms\QuanLy\FormMain_QuanLy.Designer.cs">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuanLy\FormND_ThemTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormND_ThemTaiKhoan.Designer.cs">
+      <DependentUpon>FormND_ThemTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormND_ThemThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormND_ThemThongTin.Designer.cs">
+      <DependentUpon>FormND_ThemThongTin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\QuanLy\FormQLNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,12 @@
     <EmbeddedResource Include="Forms\QuanLy\FormMain_QuanLy.resx">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormND_ThemTaiKhoan.resx">
+      <DependentUpon>FormND_ThemTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormND_ThemThongTin.resx">
+      <DependentUpon>FormND_ThemThongTin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormQLNhaCungCap.resx">
       <DependentUpon>FormQLNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormThemNhanVien.resx">
       <DependentUpon>FormThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormThongKeDoanhSo.resx">
+      <DependentUpon>FormThongKeDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\ucSanPham.resx">
       <DependentUpon>ucSanPham.cs</DependentUpon>
@@ -156,6 +177,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CỬA HÀNG NƯỚC GIẢI KHÁT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snapedit_1744706502167.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-of-two-clockwise-arrows-rotation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\party-popper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chưa có tên %2810 x 20 cm%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chưa có tên %2810 x 20 cm%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

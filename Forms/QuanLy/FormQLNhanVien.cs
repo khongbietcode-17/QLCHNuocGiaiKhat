@@ -18,6 +18,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         }
         private void FormQLNhanVien_Load(object sender, EventArgs e)
         {
+            dataGridView1.ReadOnly = true;
             cboVaiTroLoc.SelectedIndex = 0; // Mặc định là Tất cả
             this.ControlBox = false;
             string query = @"SELECT 
@@ -300,6 +301,9 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             LoadNguoiDung(); // Load lại sau khi cập nhật
         }
 
- 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

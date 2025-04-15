@@ -27,3 +27,5 @@ D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.pdb
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLNhaCungCap.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLSanPham.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.ucSanPham.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormND_ThemTaiKhoan.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormND_ThemThongTin.resources
