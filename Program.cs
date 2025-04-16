@@ -1,4 +1,5 @@
-﻿using QLCH_NuocGiaiKhat.Forms.Shared;
+﻿using QLCH_NuocGiaiKhat.Forms.QuanLy;
+using QLCH_NuocGiaiKhat.Forms.Shared;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;

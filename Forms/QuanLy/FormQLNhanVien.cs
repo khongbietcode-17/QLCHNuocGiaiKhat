@@ -305,5 +305,20 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTenTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            TimKiemNguoiDung();
+        }
+
+        private void cboVaiTroLoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            TimKiemNguoiDung();
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         }
         public void ShowFormThongTin(int idNguoiDung)
         {
-            FormND_ThemThongTin frmThongTin = new FormND_ThemThongTin(idNguoiDung);
+            FormND_ThemThongTin frmThongTin = new FormND_ThemThongTin(this, idNguoiDung);
             frmThongTin.TopLevel = false;
             frmThongTin.FormBorderStyle = FormBorderStyle.None;
             frmThongTin.Dock = DockStyle.Fill;
@@ -42,6 +42,11 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             panel1.Controls.Clear();
             panel1.Controls.Add(frmThongTin);
             frmThongTin.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

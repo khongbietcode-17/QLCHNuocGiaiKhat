@@ -27,23 +27,23 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.pnlTaiKhoan = new System.Windows.Forms.Panel();
-            this.picUser = new System.Windows.Forms.PictureBox();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.pnlMatKhau = new System.Windows.Forms.Panel();
-            this.picLock = new System.Windows.Forms.PictureBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.picEye = new System.Windows.Forms.PictureBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.lblThongBao = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.picUser = new System.Windows.Forms.PictureBox();
+            this.picLock = new System.Windows.Forms.PictureBox();
+            this.picEye = new System.Windows.Forms.PictureBox();
             this.pnlTaiKhoan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.pnlMatKhau.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTaiKhoan
@@ -57,20 +57,10 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlTaiKhoan.Size = new System.Drawing.Size(260, 40);
             this.pnlTaiKhoan.TabIndex = 2;
             // 
-            // picUser
-            // 
-            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
-            this.picUser.Location = new System.Drawing.Point(5, 4);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(32, 32);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 0;
-            this.picUser.TabStop = false;
-            // 
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTaiKhoan.Location = new System.Drawing.Point(45, 10);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(210, 18);
@@ -88,37 +78,15 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlMatKhau.Size = new System.Drawing.Size(260, 40);
             this.pnlMatKhau.TabIndex = 3;
             // 
-            // picLock
-            // 
-            this.picLock.Image = ((System.Drawing.Image)(resources.GetObject("picLock.Image")));
-            this.picLock.Location = new System.Drawing.Point(5, 4);
-            this.picLock.Name = "picLock";
-            this.picLock.Size = new System.Drawing.Size(32, 32);
-            this.picLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLock.TabIndex = 0;
-            this.picLock.TabStop = false;
-            // 
             // txtMatKhau
             // 
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(45, 10);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(170, 18);
             this.txtMatKhau.TabIndex = 1;
             this.txtMatKhau.UseSystemPasswordChar = true;
-            // 
-            // picEye
-            // 
-            this.picEye.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
-            this.picEye.Location = new System.Drawing.Point(225, 7);
-            this.picEye.Name = "picEye";
-            this.picEye.Size = new System.Drawing.Size(24, 24);
-            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEye.TabIndex = 2;
-            this.picEye.TabStop = false;
-            this.picEye.Click += new System.EventHandler(this.picEye_Click);
             // 
             // btnDangNhap
             // 
@@ -144,16 +112,6 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.lblThongBao.TabIndex = 5;
             this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // picLogo
-            // 
-            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(70, 16);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(200, 200);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -177,6 +135,48 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.label2.Text = "ĐĂNG NHẬP";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // picLogo
+            // 
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(70, 16);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(200, 200);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
+            // 
+            // picUser
+            // 
+            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
+            this.picUser.Location = new System.Drawing.Point(5, 4);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(32, 32);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 0;
+            this.picUser.TabStop = false;
+            // 
+            // picLock
+            // 
+            this.picLock.Image = ((System.Drawing.Image)(resources.GetObject("picLock.Image")));
+            this.picLock.Location = new System.Drawing.Point(5, 4);
+            this.picLock.Name = "picLock";
+            this.picLock.Size = new System.Drawing.Size(32, 32);
+            this.picLock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLock.TabIndex = 0;
+            this.picLock.TabStop = false;
+            // 
+            // picEye
+            // 
+            this.picEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picEye.Image = ((System.Drawing.Image)(resources.GetObject("picEye.Image")));
+            this.picEye.Location = new System.Drawing.Point(225, 7);
+            this.picEye.Name = "picEye";
+            this.picEye.Size = new System.Drawing.Size(24, 24);
+            this.picEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEye.TabIndex = 2;
+            this.picEye.TabStop = false;
+            this.picEye.Click += new System.EventHandler(this.picEye_Click);
+            // 
             // FormDangNhap
             // 
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -195,12 +195,12 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
             this.pnlTaiKhoan.ResumeLayout(false);
             this.pnlTaiKhoan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.pnlMatKhau.ResumeLayout(false);
             this.pnlMatKhau.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

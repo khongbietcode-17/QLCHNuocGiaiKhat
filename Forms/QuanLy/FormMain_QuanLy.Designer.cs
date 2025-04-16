@@ -64,7 +64,7 @@
             // 
             this.pnQLNV.BackColor = System.Drawing.Color.MediumPurple;
             this.pnQLNV.Controls.Add(this.btnQLNV);
-            this.pnQLNV.Location = new System.Drawing.Point(3, 261);
+            this.pnQLNV.Location = new System.Drawing.Point(2, 269);
             this.pnQLNV.Name = "pnQLNV";
             this.pnQLNV.Size = new System.Drawing.Size(252, 46);
             this.pnQLNV.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.pnTKDS.BackColor = System.Drawing.Color.MediumPurple;
             this.pnTKDS.Controls.Add(this.btnThongKe);
-            this.pnTKDS.Location = new System.Drawing.Point(3, 365);
+            this.pnTKDS.Location = new System.Drawing.Point(2, 426);
             this.pnTKDS.Name = "pnTKDS";
             this.pnTKDS.Size = new System.Drawing.Size(252, 46);
             this.pnTKDS.TabIndex = 5;
@@ -82,7 +82,7 @@
             // 
             this.pnQLSP.BackColor = System.Drawing.Color.MediumPurple;
             this.pnQLSP.Controls.Add(this.btnQLSP);
-            this.pnQLSP.Location = new System.Drawing.Point(3, 313);
+            this.pnQLSP.Location = new System.Drawing.Point(2, 321);
             this.pnQLSP.Name = "pnQLSP";
             this.pnQLSP.Size = new System.Drawing.Size(252, 46);
             this.pnQLSP.TabIndex = 4;
@@ -91,7 +91,7 @@
             // 
             this.pnQLNCC.BackColor = System.Drawing.Color.MediumPurple;
             this.pnQLNCC.Controls.Add(this.btnQLNCC);
-            this.pnQLNCC.Location = new System.Drawing.Point(3, 417);
+            this.pnQLNCC.Location = new System.Drawing.Point(2, 374);
             this.pnQLNCC.Name = "pnQLNCC";
             this.pnQLNCC.Size = new System.Drawing.Size(252, 46);
             this.pnQLNCC.TabIndex = 3;
@@ -108,9 +108,9 @@
             this.sider.Controls.Add(this.pictureBox2);
             this.sider.Controls.Add(this.panel1);
             this.sider.Controls.Add(this.pnQLNV);
-            this.sider.Controls.Add(this.pnQLNCC);
             this.sider.Controls.Add(this.pnTKDS);
             this.sider.Controls.Add(this.pnQLSP);
+            this.sider.Controls.Add(this.pnQLNCC);
             this.sider.Dock = System.Windows.Forms.DockStyle.Left;
             this.sider.Location = new System.Drawing.Point(0, 0);
             this.sider.Name = "sider";
@@ -130,7 +130,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumPurple;
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 209);
+            this.panel1.Location = new System.Drawing.Point(2, 217);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(252, 46);
             this.panel1.TabIndex = 3;
@@ -165,7 +165,7 @@
             this.lblTen.BackColor = System.Drawing.Color.Transparent;
             this.lblTen.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
             this.lblTen.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblTen.Location = new System.Drawing.Point(580, 261);
+            this.lblTen.Location = new System.Drawing.Point(579, 261);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(145, 54);
             this.lblTen.TabIndex = 2;

@@ -70,8 +70,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 18.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(78, 39);
+            this.label1.ForeColor = System.Drawing.Color.Gold;
+            this.label1.Location = new System.Drawing.Point(80, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(243, 35);
             this.label1.TabIndex = 8;
@@ -115,16 +115,16 @@
             // 
             // btnTiep
             // 
-            this.btnTiep.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnTiep.BackColor = System.Drawing.Color.Orange;
             this.btnTiep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTiep.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTiep.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTiep.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.n;
             this.btnTiep.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTiep.Location = new System.Drawing.Point(118, 261);
+            this.btnTiep.Location = new System.Drawing.Point(29, 287);
             this.btnTiep.Name = "btnTiep";
             this.btnTiep.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.btnTiep.Size = new System.Drawing.Size(155, 40);
+            this.btnTiep.Size = new System.Drawing.Size(336, 47);
             this.btnTiep.TabIndex = 7;
             this.btnTiep.Text = "Tiếp theo";
             this.btnTiep.UseVisualStyleBackColor = false;
@@ -134,8 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SlateBlue;
-            this.BackgroundImage = global::QLCH_NuocGiaiKhat.Properties.Resources.Chưa_có_tên__10_x_20_cm_;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(394, 425);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

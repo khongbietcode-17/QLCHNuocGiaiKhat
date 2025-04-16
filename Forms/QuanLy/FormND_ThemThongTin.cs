@@ -8,12 +8,14 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
     {
         private int idNguoiDung; // biến lưu ID người dùng nhận từ bước trước
         string chuoiketnoi = "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
-     
-        public FormND_ThemThongTin(int id) // constructor nhận ID
+        FormThemNhanVien _parent;
+
+
+        public FormND_ThemThongTin(FormThemNhanVien parent, int id) // constructor nhận ID
         {
             InitializeComponent();
             idNguoiDung = id;
-         
+            _parent = parent;
         }
 
         private void FormND_ThemThongTin_Load(object sender, EventArgs e)
@@ -65,7 +67,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 cmd.ExecuteNonQuery();
             }
             MessageBox.Show("Đăng ký thành công!");
-            this.Close(); // hoặc Reset form nếu cần
+            _parent.Close(); // hoặc Reset form nếu cần
         }
     }
 }

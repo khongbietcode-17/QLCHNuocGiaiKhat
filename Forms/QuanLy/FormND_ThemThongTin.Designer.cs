@@ -45,7 +45,7 @@
             // 
             // txtLuong
             // 
-            this.txtLuong.Location = new System.Drawing.Point(141, 278);
+            this.txtLuong.Location = new System.Drawing.Point(141, 267);
             this.txtLuong.Multiline = true;
             this.txtLuong.Name = "txtLuong";
             this.txtLuong.Size = new System.Drawing.Size(142, 28);
@@ -53,7 +53,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(141, 232);
+            this.txtDiaChi.Location = new System.Drawing.Point(141, 221);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(221, 28);
@@ -61,7 +61,7 @@
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(141, 185);
+            this.txtSDT.Location = new System.Drawing.Point(141, 174);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(221, 28);
@@ -69,7 +69,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(141, 139);
+            this.txtEmail.Location = new System.Drawing.Point(141, 128);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(221, 28);
@@ -77,7 +77,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(141, 92);
+            this.txtHoTen.Location = new System.Drawing.Point(141, 81);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(221, 28);
@@ -89,7 +89,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Ivory;
-            this.label3.Location = new System.Drawing.Point(22, 143);
+            this.label3.Location = new System.Drawing.Point(22, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 14;
@@ -101,7 +101,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Ivory;
-            this.label2.Location = new System.Drawing.Point(22, 97);
+            this.label2.Location = new System.Drawing.Point(22, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 13;
@@ -113,7 +113,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 18.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Yellow;
-            this.label1.Location = new System.Drawing.Point(77, 36);
+            this.label1.Location = new System.Drawing.Point(77, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(249, 35);
             this.label1.TabIndex = 12;
@@ -125,7 +125,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Ivory;
-            this.label4.Location = new System.Drawing.Point(22, 238);
+            this.label4.Location = new System.Drawing.Point(22, 227);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 16;
@@ -137,7 +137,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Ivory;
-            this.label5.Location = new System.Drawing.Point(22, 192);
+            this.label5.Location = new System.Drawing.Point(22, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 20);
             this.label5.TabIndex = 15;
@@ -149,7 +149,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Ivory;
-            this.label7.Location = new System.Drawing.Point(22, 282);
+            this.label7.Location = new System.Drawing.Point(22, 271);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 20);
             this.label7.TabIndex = 17;
@@ -161,7 +161,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Black", 11.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.Ivory;
-            this.label6.Location = new System.Drawing.Point(283, 282);
+            this.label6.Location = new System.Drawing.Point(283, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 20);
             this.label6.TabIndex = 18;
@@ -169,16 +169,16 @@
             // 
             // btnHoanThanh
             // 
-            this.btnHoanThanh.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnHoanThanh.BackColor = System.Drawing.Color.Orange;
             this.btnHoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHoanThanh.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoanThanh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnHoanThanh.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.check1;
             this.btnHoanThanh.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHoanThanh.Location = new System.Drawing.Point(141, 324);
+            this.btnHoanThanh.Location = new System.Drawing.Point(26, 324);
             this.btnHoanThanh.Name = "btnHoanThanh";
             this.btnHoanThanh.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.btnHoanThanh.Size = new System.Drawing.Size(155, 40);
+            this.btnHoanThanh.Size = new System.Drawing.Size(336, 40);
             this.btnHoanThanh.TabIndex = 19;
             this.btnHoanThanh.Text = "Hoàn tất";
             this.btnHoanThanh.UseVisualStyleBackColor = false;
@@ -188,7 +188,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::QLCH_NuocGiaiKhat.Properties.Resources.Chưa_có_tên__10_x_20_cm_1;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(378, 386);
             this.Controls.Add(this.btnHoanThanh);
             this.Controls.Add(this.label6);

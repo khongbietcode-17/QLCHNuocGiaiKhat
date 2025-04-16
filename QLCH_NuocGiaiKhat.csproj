@@ -46,6 +46,12 @@
     <Compile Include="Forms\NhanVien\FormMain_NhanVien.Designer.cs">
       <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuanLy\FormChiTietSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormChiTietSanPham.Designer.cs">
+      <DependentUpon>FormChiTietSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\QuanLy\FormMain_QuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="Forms\QuanLy\FormThemNhanVien.Designer.cs">
       <DependentUpon>FormThemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuanLy\FormThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormThemSanPham.Designer.cs">
+      <DependentUpon>FormThemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\QuanLy\FormThongKeDoanhSo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,9 @@
     <EmbeddedResource Include="Forms\NhanVien\FormMain_NhanVien.resx">
       <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormChiTietSanPham.resx">
+      <DependentUpon>FormChiTietSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormMain_QuanLy.resx">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormThemNhanVien.resx">
       <DependentUpon>FormThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormThemSanPham.resx">
+      <DependentUpon>FormThemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormThongKeDoanhSo.resx">
       <DependentUpon>FormThongKeDoanhSo.cs</DependentUpon>
@@ -234,6 +252,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
