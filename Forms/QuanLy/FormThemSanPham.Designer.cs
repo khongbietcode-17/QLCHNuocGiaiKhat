@@ -55,6 +55,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnChonAnh
+            // 
+            btnChonAnh.BackColor = System.Drawing.Color.Goldenrod;
+            btnChonAnh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnChonAnh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnChonAnh.Location = new System.Drawing.Point(29, 222);
+            btnChonAnh.Name = "btnChonAnh";
+            btnChonAnh.Size = new System.Drawing.Size(150, 21);
+            btnChonAnh.TabIndex = 22;
+            btnChonAnh.Text = "Chọn ảnh";
+            btnChonAnh.UseVisualStyleBackColor = false;
+            btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
+            // 
             // btnThem
             // 
             this.btnThem.BackColor = System.Drawing.Color.ForestGreen;
@@ -69,19 +82,6 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnChonAnh
-            // 
-            btnChonAnh.BackColor = System.Drawing.Color.Goldenrod;
-            btnChonAnh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            btnChonAnh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnChonAnh.Location = new System.Drawing.Point(29, 222);
-            btnChonAnh.Name = "btnChonAnh";
-            btnChonAnh.Size = new System.Drawing.Size(150, 21);
-            btnChonAnh.TabIndex = 22;
-            btnChonAnh.Text = "Chọn ảnh";
-            btnChonAnh.UseVisualStyleBackColor = false;
-            btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
-            // 
             // txtGhiChu
             // 
             this.txtGhiChu.Location = new System.Drawing.Point(29, 353);
@@ -89,6 +89,7 @@
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(309, 102);
             this.txtGhiChu.TabIndex = 21;
+
             // 
             // cboMaNCC
             // 
@@ -311,7 +312,7 @@
             this.Controls.Add(this.txtGiaNhap);
             this.Controls.Add(this.txtTenSP);
             this.Controls.Add(this.txtMaSP);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemSanPham";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormThemSanPham_Load);

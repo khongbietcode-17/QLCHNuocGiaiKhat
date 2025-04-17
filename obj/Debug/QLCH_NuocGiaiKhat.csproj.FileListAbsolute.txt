@@ -11,11 +11,13 @@ D:\Code C#\QLCH_NuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.exe
 D:\Code C#\QLCH_NuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.pdb
 D:\Code C#\QLCH_NuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLNhanVien.resources
 D:\Code C#\QLCH_NuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormThemNhanVien.resources
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\QLCH_NuocGiaiKhat.exe.config
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\QLCH_NuocGiaiKhat.exe
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\QLCH_NuocGiaiKhat.pdb
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.csproj.AssemblyReference.cache
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.NhanVien.FormMain_NhanVien.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormChiTietSanPham.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormMain_QuanLy.resources
-D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormND_ThemTaiKhoan.resources
-D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormND_ThemThongTin.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLNhaCungCap.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLNhanVien.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLSanPham.resources
@@ -27,8 +29,6 @@ D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.Shared.FormDangNha
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Properties.Resources.resources
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.csproj.GenerateResource.cache
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.csproj.CoreCompileInputs.cache
-D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\QLCH_NuocGiaiKhat.exe
-D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\QLCH_NuocGiaiKhat.pdb
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.exe
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.pdb
-D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormChiTietSanPham.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.ucNguoiDung.resources

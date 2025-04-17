@@ -215,10 +215,22 @@ using (SqlConnection conn = new SqlConnection(chuoiketnoi))
                         {
                             MessageBox.Show("Thêm nhà cung cấp thành công!");
                             LoadNhaCungCap();
+                            txtMaNCC.Clear();
+                            txtTenNCC.Clear();
+                            txtDiaChi.Clear();
+                            txtSoDienThoai.Clear();
+                            txtEmail.Clear();
+                            txtGhiChu.Clear();
                         }
                         else
                         {
                             MessageBox.Show("Thêm không thành công.");
+                            txtMaNCC.Clear();
+                            txtTenNCC.Clear();
+                            txtDiaChi.Clear();
+                            txtSoDienThoai.Clear();
+                            txtEmail.Clear();
+                            txtGhiChu.Clear();
                         }
                     }
                     catch (Exception ex)
@@ -227,6 +239,7 @@ using (SqlConnection conn = new SqlConnection(chuoiketnoi))
                     }
                 }
             }
+         
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)

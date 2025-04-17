@@ -49,6 +49,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 ScrollBarHider.HideVerticalScrollBar(flowSanPham);
             };
         }
+
         public class ScrollBarHider
         {
             [DllImport("user32.dll")]
@@ -328,15 +329,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             }
         }
 
-        private void flowSanPham_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
-
-        private void btnXemChiTiet_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

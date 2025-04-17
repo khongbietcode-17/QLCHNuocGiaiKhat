@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QLCH_NuocGiaiKhat</RootNamespace>
     <AssemblyName>QLCH_NuocGiaiKhat</AssemblyName>
-    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -37,6 +40,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -57,18 +61,6 @@
     </Compile>
     <Compile Include="Forms\QuanLy\FormMain_QuanLy.Designer.cs">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\QuanLy\FormND_ThemTaiKhoan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\QuanLy\FormND_ThemTaiKhoan.Designer.cs">
-      <DependentUpon>FormND_ThemTaiKhoan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\QuanLy\FormND_ThemThongTin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\QuanLy\FormND_ThemThongTin.Designer.cs">
-      <DependentUpon>FormND_ThemThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QuanLy\FormQLNhaCungCap.cs">
       <SubType>Form</SubType>
@@ -112,6 +104,12 @@
     <Compile Include="Forms\QuanLy\ucSanPham.Designer.cs">
       <DependentUpon>ucSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuanLy\ucNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\ucNguoiDung.Designer.cs">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Shared\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,12 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormMain_QuanLy.resx">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\QuanLy\FormND_ThemTaiKhoan.resx">
-      <DependentUpon>FormND_ThemTaiKhoan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\QuanLy\FormND_ThemThongTin.resx">
-      <DependentUpon>FormND_ThemThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormQLNhaCungCap.resx">
       <DependentUpon>FormQLNhaCungCap.cs</DependentUpon>
@@ -153,6 +145,9 @@
     <EmbeddedResource Include="Forms\QuanLy\FormThongKeDoanhSo.resx">
       <DependentUpon>FormThongKeDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\ucNguoiDung.resx">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\ucSanPham.resx">
       <DependentUpon>ucSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +164,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -264,6 +260,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue &amp; White Modern Line Chart Graph %28591 x 357 px%29 %28587 x 336 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%29 %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,7 +44,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-
             string maSP = txtMaSP.Text.Trim();
             string tenSP = txtTenSP.Text.Trim();
             string loai = cboLoai.Text.Trim();
@@ -127,5 +126,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             LoadNhaCungCapVaoComboBox();
         }
+
+    
     }
 }

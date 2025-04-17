@@ -4,8 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
+using System.IO;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
+using QLCH_NuocGiaiKhat.Forms.QuanLy;
+
+using static QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLSanPham;
 
 namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 {
@@ -16,309 +23,320 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             InitializeComponent();
         }
+        //CÁC LOAD 
         private void FormQLNhanVien_Load(object sender, EventArgs e)
         {
-            dataGridView1.ReadOnly = true;
-            cboVaiTroLoc.SelectedIndex = 0; // Mặc định là Tất cả
-            this.ControlBox = false;
-            string query = @"SELECT 
-                        nd.ID, 
-                        nd.Vaitro,
-                        nd.Taikhoan,
-                        nd.Matkhau,
-                        tt.HoTen,
-                        tt.Email,
-                        tt.DiaChi,
-                        tt.SoDienThoai
-                     FROM NguoiDung nd
-                     LEFT JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung";
+          
+            LoadDanhSachNguoiDung();
+            LoadNguoiDungCard();
+
+
+            flowNV.AutoScroll = true; // ✅ phải có dòng này
+            ScrollBarHider.HideVerticalScrollBar(flowNV); // ẩn thanh cuộn
+            flowNV.Scroll += (s, ev) =>
+            {
+                ScrollBarHider.HideVerticalScrollBar(flowNV);
+            };
+            flowNV.Layout += (s, ev) =>
+            {
+                ScrollBarHider.HideVerticalScrollBar(flowNV);
+            };
+
+        }
+        private void LoadDanhSachNguoiDung()
+        {
+            string query = "SELECT \r\n   nd.ID,\r\n    nd.Taikhoan,\r\n    nd.Matkhau,\r\n    nd.Vaitro,\r\n    tt.HoTen,\r\n    tt.Email,\r\n    tt.SoDienThoai,\r\n    tt.DiaChi,\r\n    tt.Anh\r\nFROM NguoiDung nd\r\nINNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung";
+        }
+        private void LoadNguoiDungCard(string keyword = "")
+        {
+            flowNV.Controls.Clear();
+            string query = @"
+    SELECT 
+        nd.ID,
+        nd.Taikhoan,
+        nd.Matkhau,
+        nd.Vaitro,
+        tt.HoTen,
+        tt.Email,
+        tt.SoDienThoai,
+        tt.DiaChi,
+        tt.Anh
+    FROM NguoiDung nd
+    INNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung
+    WHERE 
+        tt.HoTen COLLATE Latin1_General_CI_AI LIKE @keyword
+        OR nd.Taikhoan COLLATE Latin1_General_CI_AI LIKE @keyword
+        OR tt.Email COLLATE Latin1_General_CI_AI LIKE @keyword
+";
+
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
-                SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[1].HeaderText = "Chức Vụ";
-            dataGridView1.Columns[2].HeaderText = "Tài khoản";
-            dataGridView1.Columns[3].HeaderText = "Mật khẩu";
-            dataGridView1.Columns[4].HeaderText = "Họ và tên";
-            dataGridView1.Columns[5].HeaderText = "Email";
-            dataGridView1.Columns[6].HeaderText = "Địa chỉ";
-            dataGridView1.Columns[7].HeaderText = "SĐT";
-        }
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                
+                while (reader.Read())
+                {
+                    ucNguoiDung ndCard = new ucNguoiDung();
 
+                    // Gán dữ liệu từ SQL vào control của UserControl
+                    ndCard.lblID.Text = "Mã ID: "+reader["ID"].ToString();
+                    ndCard.lblTK.Text = "Tài khoản: " + reader["Taikhoan"].ToString();
+                    ndCard.lblHoTen.Text = "" + reader["HoTen"].ToString();
+                    ndCard.lblDiaChi.Text = "Địa chỉ: " + reader["DiaChi"].ToString();
+                    ndCard.lblSDT.Text = "Số điện thoại: " + reader["SoDienThoai"].ToString();
+                    ndCard.lblEmail.Text = "Email: " + reader["Email"].ToString();
+                    ndCard.lblVaiTro.Text = "Chức vụ: " + reader["Vaitro"].ToString();
+
+                    ndCard.Tag = reader["ID"].ToString();
+                    // Xử lý hình ảnh
+                    if (reader["Anh"] != DBNull.Value)
+                    {
+                        byte[] imgBytes = (byte[])reader["Anh"];
+                        using (MemoryStream ms = new MemoryStream(imgBytes))
+                        {
+                            ndCard.picND.Image = Image.FromStream(ms);
+                        }
+                    }
+
+
+                    ndCard.Click += NdCard_Click;
+                    // Thêm thẻ vào FlowLayoutPanel
+                    flowNV.Controls.Add(ndCard);
+                }
+            }
+        }
+        //Không cần quan tâm code này ( Ẩn thanh cuộn nhưng bị lỗi rồi :) ) 
+        public class ScrollBarHider
+        {
+            [DllImport("user32.dll")]
+            private static extern int ShowScrollBar(IntPtr hWnd, int wBar, int bShow);
+
+            private const int SB_HORZ = 0;
+            private const int SB_VERT = 1;
+
+            public static void HideVerticalScrollBar(Control control)
+            {
+                ShowScrollBar(control.Handle, SB_VERT, 0);
+            }
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             FormThemNhanVien form = new FormThemNhanVien();
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-                
-                LoadNguoiDung(); // Load lại sau khi thêm
-
-            }
+            form.ShowDialog();
         }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void NdCard_Click(object sender, EventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+            Control control = (Control)sender;
+            string ID = "";
+            if(control is ucNguoiDung)
+                ID = control.Tag?.ToString();
+            else
+                ID = control.Parent?.Tag?.ToString();
 
-                txtId.Text = row.Cells[0].Value?.ToString();            // ID
-                cboVaiTro.Text = row.Cells[1].Value?.ToString();        // Vai trò
-                txtTaiKhoan.Text = row.Cells[2].Value?.ToString();      // Tài khoản
-                txtMatkhau.Text = row.Cells[3].Value?.ToString();       // Mật khẩu
-                txtHoTen.Text = row.Cells[4].Value?.ToString();         // Họ tên
-                txtEmail.Text = row.Cells[5].Value?.ToString();         // Email
-                txtDiaChi.Text = row.Cells[6].Value?.ToString();        // Địa chỉ
-                txtSoDienThoai.Text = row.Cells[7].Value?.ToString();   // SĐT
-            }
-        }
-        private void LoadNguoiDung()
-        {
-            this.ControlBox = false;
-            string query = @"SELECT 
-                        nd.ID, 
-                        nd.Vaitro,
-                        nd.Taikhoan,
-                        nd.Matkhau,
-                        tt.HoTen,
-                        tt.Email,
-                        tt.DiaChi,
-                        tt.SoDienThoai
-                     FROM NguoiDung nd
-                     LEFT JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung";
+            if (ID == null || ID == "")
+                return;
+            string query = @"
+    SELECT 
+    nd.ID,
+    nd.Taikhoan,
+    nd.Matkhau,
+    nd.Vaitro,
+    tt.HoTen,
+    tt.Email,
+    tt.SoDienThoai,
+    tt.DiaChi,
+    tt.Anh
+FROM NguoiDung nd
+INNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung
+WHERE nd.ID = @ID";
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
-                SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dataGridView1.DataSource = dt;
-            }
-            dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[1].HeaderText = "Chức Vụ";
-            dataGridView1.Columns[2].HeaderText = "Tài khoản";
-            dataGridView1.Columns[3].HeaderText = "Mật khẩu";
-            dataGridView1.Columns[4].HeaderText = "Họ và tên";
-            dataGridView1.Columns[5].HeaderText = "Email";
-            dataGridView1.Columns[6].HeaderText = "Địa chỉ";
-            dataGridView1.Columns[7].HeaderText = "SĐT";
-        }
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@ID", ID);
+                conn.Open();
 
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                   txtId.Text = reader["ID"].ToString();
+                   txtTaiKhoan.Text = reader["TaiKhoan"].ToString();
+                   txtMatkhau.Text = reader["Matkhau"].ToString();
+                   txtHoTen.Text = reader["HoTen"].ToString();
+                   txtDiaChi.Text = reader["DiaChi"].ToString();
+                   txtSoDienThoai.Text = reader["SoDienThoai"].ToString();
+                   txtEmail.Text = reader["Email"].ToString();
+                   cboVaiTro.Text = reader["Vaitro"].ToString();
+                    if (reader["Anh"] != DBNull.Value)
+                    {
+                        byte[] imgBytes = (byte[])reader["Anh"];
+                        using (MemoryStream ms = new MemoryStream(imgBytes))
+                        {
+                            picAnhSua.Image = Image.FromStream(ms);
+                        }
+                    }
+                    else
+                    {
+                        picAnhSua.Image = null;
+                    }
+                }
+                reader.Close();
+            }
+        }
+        private byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img.Save(ms, img.RawFormat);
+                return ms.ToArray();
+            }
+        }
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string id = txtId.Text.Trim();
-            string taikhoan = txtTaiKhoan.Text.Trim();
-            string matkhau = txtMatkhau.Text.Trim();
-            string vaitro = cboVaiTro.Text.Trim();
-            string hoten = txtHoTen.Text.Trim();
-            string email = txtEmail.Text.Trim();
-            string diachi = txtDiaChi.Text.Trim();
-            string sdt = txtSoDienThoai.Text.Trim();
 
-            if (string.IsNullOrEmpty(id))
+            string chuoiketnoi = "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
+            int id = Convert.ToInt32(txtId.Text.Trim()); // chuyển về int để chắc chắn đúng kiểu
+            string tk = txtTaiKhoan.Text.Trim();
+            string mk = txtMatkhau.Text.Trim();
+            string ht = txtHoTen.Text.Trim();
+            string em = txtEmail.Text.Trim();
+            string sdt = txtSoDienThoai.Text.Trim();
+            string dc = txtDiaChi.Text.Trim();
+            string cv = cboVaiTro.Text.Trim();
+
+            byte[] Anh = null;
+            if (picAnhSua.Image != null)
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                Anh = ImageToByteArray(picAnhSua.Image);
             }
 
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
                 conn.Open();
+                SqlTransaction tran = conn.BeginTransaction();
 
-                // Cập nhật bảng NguoiDung
-                string updateNguoiDung = "UPDATE NguoiDung SET Taikhoan = @tk, Matkhau = @mk, Vaitro = @vt WHERE ID = @id";
-                using (SqlCommand cmd1 = new SqlCommand(updateNguoiDung, conn))
+                try
                 {
-                    cmd1.Parameters.AddWithValue("@tk", taikhoan);
-                    cmd1.Parameters.AddWithValue("@mk", matkhau);
-                    cmd1.Parameters.AddWithValue("@vt", vaitro);
-                    cmd1.Parameters.AddWithValue("@id", id);
-                    cmd1.ExecuteNonQuery();
-                }
+                    // Cập nhật bảng NguoiDung
+                    string query1 = @"UPDATE NguoiDung 
+                              SET TaiKhoan = @TaiKhoan, MatKhau = @MatKhau, VaiTro = @VaiTro
+                              WHERE ID = @ID";
+                    SqlCommand cmd1 = new SqlCommand(query1, conn, tran);
+                    cmd1.Parameters.AddWithValue("@ID", id);
+                    cmd1.Parameters.AddWithValue("@TaiKhoan", tk);
+                    cmd1.Parameters.AddWithValue("@MatKhau", mk);
+                    cmd1.Parameters.AddWithValue("@VaiTro", cv);
+                    cmd1.ExecuteNonQuery(); // không cần lấy lại ID
 
-                // Cập nhật bảng ThongTinNguoiDung
-                string updateThongTin = @"
-                    UPDATE ThongTinNguoiDung 
-                    SET HoTen = @ht, Email = @em, DiaChi = @dc, SoDienThoai = @sdt 
-                    WHERE IDNguoiDung = @id";
-                using (SqlCommand cmd2 = new SqlCommand(updateThongTin, conn))
-                {
-                    cmd2.Parameters.AddWithValue("@ht", hoten);
-                    cmd2.Parameters.AddWithValue("@em", email);
-                    cmd2.Parameters.AddWithValue("@dc", diachi);
-                    cmd2.Parameters.AddWithValue("@sdt", sdt);
-                    cmd2.Parameters.AddWithValue("@id", id);
+                    // Cập nhật bảng ThongTinNguoiDung
+                    string query2 = @"UPDATE ThongTinNguoiDung 
+                              SET HoTen = @HoTen, Email = @Email, SoDienThoai = @SDT, 
+                                  DiaChi = @DiaChi, Anh = @Anh
+                              WHERE IDNguoiDung = @ID";
+                    SqlCommand cmd2 = new SqlCommand(query2, conn, tran);
+                    cmd2.Parameters.AddWithValue("@ID", id);
+                    cmd2.Parameters.AddWithValue("@HoTen", ht);
+                    cmd2.Parameters.AddWithValue("@Email", em);
+                    cmd2.Parameters.AddWithValue("@SDT", sdt);
+                    cmd2.Parameters.AddWithValue("@DiaChi", dc);
+                    cmd2.Parameters.Add("@Anh", SqlDbType.VarBinary).Value = (object)Anh ?? DBNull.Value;
+
                     cmd2.ExecuteNonQuery();
+
+                    tran.Commit();
+                    MessageBox.Show("Cập nhật thông tin thành công!");
+                    LoadDanhSachNguoiDung();
+                    LoadNguoiDungCard();
                 }
-
-                MessageBox.Show("Cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                catch (Exception ex)
+                {
+                    tran.Rollback();
+                    MessageBox.Show("Lỗi khi cập nhật: " + ex.Message);
+                }
             }
-
-            LoadNguoiDung(); // Load lại sau khi cập nhật
         }
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem đã chọn dòng nào chưa
-            if (txtId.Text == null || txtId.Text.Trim() == "")
+            string chuoiketnoi = "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
+            int id;
+            if (!int.TryParse(txtId.Text.Trim(), out id))
             {
-                MessageBox.Show("Vui lòng chọn nhân viên cần xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("ID không hợp lệ. Vui lòng chọn một người dùng từ danh sách!");
                 return;
             }
-
-            // Xác nhận xóa
-            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                string id = txtId.Text.Trim();
-
-                using (SqlConnection conn = new SqlConnection(chuoiketnoi))
-                {
-                    conn.Open();
-
-                    // Xóa thông tin trong bảng ThongTinNguoiDung trước (vì có khóa ngoại)
-                    string deleteThongTin = "DELETE FROM ThongTinNguoiDung WHERE IDNguoiDung = @id";
-                    using (SqlCommand cmd1 = new SqlCommand(deleteThongTin, conn))
-                    {
-                        cmd1.Parameters.AddWithValue("@id", id);
-                        cmd1.ExecuteNonQuery();
-                    }
-
-                    // Xóa trong bảng NguoiDung
-                    string deleteNguoiDung = "DELETE FROM NguoiDung WHERE ID = @id";
-                    using (SqlCommand cmd2 = new SqlCommand(deleteNguoiDung, conn))
-                    {
-                        cmd2.Parameters.AddWithValue("@id", id);
-                        cmd2.ExecuteNonQuery();
-                    }
-
-                    MessageBox.Show("Xóa nhân viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-
-                // Refresh lại danh sách
-                LoadNguoiDung();
-
-                // Xóa thông tin trong các TextBox để tránh hiểu lầm
-                ClearFields();
-            }
-        }
-        private void ClearFields()
-        {
-            txtId.Clear();
-            txtTaiKhoan.Clear();
-            txtMatkhau.Clear();
-            cboVaiTro.SelectedIndex = -1;
-            txtHoTen.Clear();
-            txtEmail.Clear();
-            txtDiaChi.Clear();
-            txtSoDienThoai.Clear();
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            TimKiemNguoiDung();
-
-        }
-        private void TimKiemNguoiDung()
-        {
-            string tuKhoa = txtTenTimKiem.Text.Trim().ToLower();
-            string vaiTroLoc = cboVaiTroLoc.Text;
-
-            string query = @"SELECT 
-                        nd.ID, 
-                        nd.Vaitro,
-                        nd.Taikhoan,
-                        nd.Matkhau,
-                        tt.HoTen,
-                        tt.Email,
-                        tt.DiaChi,
-                        tt.SoDienThoai
-                    FROM NguoiDung nd
-                    LEFT JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung";
+            DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa người dùng này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.No) return;
 
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
-                SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
+                conn.Open();
+                SqlTransaction tran = conn.BeginTransaction();
 
-                // Tạo bản sao để lọc dữ liệu
-                DataTable dtLoc = dt.Clone();
-
-                foreach (DataRow row in dt.Rows)
+                try
                 {
-                    string hoTen = row["HoTen"]?.ToString() ?? "";
-                    string vaiTro = row["Vaitro"]?.ToString() ?? "";
+                    // Xóa trong bảng ThongTinNguoiDung trước (bảng phụ phụ thuộc vào IDNguoiDung)
+                    string query1 = "DELETE FROM ThongTinNguoiDung WHERE IDNguoiDung = @ID";
+                    SqlCommand cmd1 = new SqlCommand(query1, conn, tran);
+                    cmd1.Parameters.AddWithValue("@ID", id);
+                    cmd1.ExecuteNonQuery();
 
-                    string hoTenKhongDau = BoDauTiengViet(hoTen);
-                    string tuKhoaKhongDau = BoDauTiengViet(tuKhoa);
+                    // Sau đó xóa trong bảng NguoiDung
+                    string query2 = "DELETE FROM NguoiDung WHERE ID = @ID";
+                    SqlCommand cmd2 = new SqlCommand(query2, conn, tran);
+                    cmd2.Parameters.AddWithValue("@ID", id);
+                    cmd2.ExecuteNonQuery();
 
-                    bool hopTen = string.IsNullOrEmpty(tuKhoa) || hoTenKhongDau.Contains(tuKhoaKhongDau);
-                    bool hopVaiTro = (vaiTroLoc == "Tất cả") || vaiTro.Equals(vaiTroLoc, StringComparison.OrdinalIgnoreCase);
+                    tran.Commit();
+                    MessageBox.Show("Xóa người dùng thành công!");
 
-                    if (hopTen && hopVaiTro)
-                    {
-                        dtLoc.ImportRow(row);
-                    }
+                    // Làm mới danh sách
+                    LoadDanhSachNguoiDung();
+                    LoadNguoiDungCard();
                 }
-
-                dataGridView1.DataSource = dtLoc;
+                catch (Exception ex)
+                {
+                    tran.Rollback();
+                    MessageBox.Show("Lỗi khi xóa: " + ex.Message);
+                }
             }
-
-            // Gán lại tên cột
-            dataGridView1.Columns[0].HeaderText = "ID";
-            dataGridView1.Columns[1].HeaderText = "Chức Vụ";
-            dataGridView1.Columns[2].HeaderText = "Tài khoản";
-            dataGridView1.Columns[3].HeaderText = "Mật khẩu";
-            dataGridView1.Columns[4].HeaderText = "Họ và tên";
-            dataGridView1.Columns[5].HeaderText = "Email";
-            dataGridView1.Columns[6].HeaderText = "Địa chỉ";
-            dataGridView1.Columns[7].HeaderText = "SĐT";
         }
+ 
+     
+        private void txtTenTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtTenTimKiem.Text.Trim();
+            LoadNguoiDungCard(keyword); // gọi lại Load với từ khóa tìm kiếm
 
-        public static string BoDauTiengViet(string text)
+        }
+        public static string RemoveDiacritics(string text)
         {
             string normalized = text.Normalize(NormalizationForm.FormD);
             StringBuilder sb = new StringBuilder();
 
             foreach (char c in normalized)
             {
-                System.Globalization.UnicodeCategory uc = System.Globalization.CharUnicodeInfo.GetUnicodeCategory(c);
-                if (uc != System.Globalization.UnicodeCategory.NonSpacingMark)
+                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
                 {
                     sb.Append(c);
                 }
             }
-
-            return sb.ToString().Normalize(NormalizationForm.FormC).ToLower();
+            return sb.ToString().Normalize(NormalizationForm.FormC);
         }
-
-        private void btnLamMoi_Click(object sender, EventArgs e)
-        {
-            LoadNguoiDung(); // Load lại sau khi cập nhật
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtTenTimKiem_TextChanged(object sender, EventArgs e)
-        {
-            TimKiemNguoiDung();
-        }
-
         private void cboVaiTroLoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TimKiemNguoiDung();
+        }
+
+        private void btnChonAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                picAnhSua.Image = Image.FromFile(ofd.FileName);
+            }
         }
     }
 }
