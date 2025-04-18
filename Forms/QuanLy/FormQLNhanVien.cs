@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using QLCH_NuocGiaiKhat.Forms.QuanLy;
-
+using System.Drawing.Imaging;
 using static QLCH_NuocGiaiKhat.Forms.QuanLy.FormQLSanPham;
 
 namespace QLCH_NuocGiaiKhat.Forms.QuanLy
@@ -82,7 +82,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
                     // Gán dữ liệu từ SQL vào control của UserControl
                     ndCard.lblID.Text = "Mã ID: "+reader["ID"].ToString();
-                    ndCard.lblTK.Text = "Tài khoản: " + reader["Taikhoan"].ToString();
+                 
                     ndCard.lblHoTen.Text = "" + reader["HoTen"].ToString();
                     ndCard.lblDiaChi.Text = "Địa chỉ: " + reader["DiaChi"].ToString();
                     ndCard.lblSDT.Text = "Số điện thoại: " + reader["SoDienThoai"].ToString();
@@ -125,6 +125,9 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             FormThemNhanVien form = new FormThemNhanVien();
             form.ShowDialog();
+            LoadDanhSachNguoiDung();
+            LoadNguoiDungCard();
+
         }
         private void NdCard_Click(object sender, EventArgs e)
         {
@@ -189,13 +192,14 @@ WHERE nd.ID = @ID";
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                img.Save(ms, img.RawFormat);
+                if (img == null) return null;
+
+                img.Save(ms, ImageFormat.Png); // Hoặc ImageFormat.Jpeg nếu bạn muốn
                 return ms.ToArray();
             }
         }
         private void btnSua_Click(object sender, EventArgs e)
         {
-
             string chuoiketnoi = "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
             int id = Convert.ToInt32(txtId.Text.Trim()); // chuyển về int để chắc chắn đúng kiểu
             string tk = txtTaiKhoan.Text.Trim();
@@ -337,6 +341,20 @@ WHERE nd.ID = @ID";
             {
                 picAnhSua.Image = Image.FromFile(ofd.FileName);
             }
+        }
+
+        private void btnChupAnh_Click(object sender, EventArgs e)
+        {
+            FormChupAnh f = new FormChupAnh();
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                picAnhSua.Image = f.AnhDaChup;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

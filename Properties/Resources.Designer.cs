@@ -73,6 +73,46 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_post {
+            get {
+                object obj = ResourceManager.GetObject("add-post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add_post1 {
+            get {
+                object obj = ResourceManager.GetObject("add-post1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ADDP {
+            get {
+                object obj = ResourceManager.GetObject("ADDP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ADDP1 {
+            get {
+                object obj = ResourceManager.GetObject("ADDP1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b60 {
             get {
                 object obj = ResourceManager.GetObject("b60", resourceCulture);
@@ -86,6 +126,46 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap Blue___White_Modern_Line_Chart_Graph__591_x_357_px___587_x_336_px_ {
             get {
                 object obj = ResourceManager.GetObject("Blue & White Modern Line Chart Graph (591 x 357 px) (587 x 336 px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel {
+            get {
+                object obj = ResourceManager.GetObject("cancel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel1 {
+            get {
+                object obj = ResourceManager.GetObject("cancel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel2 {
+            get {
+                object obj = ResourceManager.GetObject("cancel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel3 {
+            get {
+                object obj = ResourceManager.GetObject("cancel3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +303,26 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Green_Simple_Medical_ID_Card__205_x_250_px_2 {
+            get {
+                object obj = ResourceManager.GetObject("Green Simple Medical ID Card (205 x 250 px)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_Simple_Medical_ID_Card__205_x_250_px_3 {
+            get {
+                object obj = ResourceManager.GetObject("Green Simple Medical ID Card (205 x 250 px)3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hidden {
             get {
                 object obj = ResourceManager.GetObject("hidden", resourceCulture);
@@ -243,9 +343,49 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOẠI_SẢN_PHẨM_BÁN_RA {
+            get {
+                object obj = ResourceManager.GetObject("LOẠI SẢN PHẨM BÁN RA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loupe {
+            get {
+                object obj = ResourceManager.GetObject("loupe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loupe1 {
+            get {
+                object obj = ResourceManager.GetObject("loupe1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loupe2 {
+            get {
+                object obj = ResourceManager.GetObject("loupe2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,6 +413,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap order {
+            get {
+                object obj = ResourceManager.GetObject("order", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap p60 {
             get {
                 object obj = ResourceManager.GetObject("p60", resourceCulture);
@@ -286,6 +436,46 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap party_popper {
             get {
                 object obj = ResourceManager.GetObject("party-popper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_camera_interface_symbol_for_button {
+            get {
+                object obj = ResourceManager.GetObject("photo-camera-interface-symbol-for-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_camera_interface_symbol_for_button1 {
+            get {
+                object obj = ResourceManager.GetObject("photo-camera-interface-symbol-for-button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_camera_interface_symbol_for_button2 {
+            get {
+                object obj = ResourceManager.GetObject("photo-camera-interface-symbol-for-button2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove {
+            get {
+                object obj = ResourceManager.GetObject("remove", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +596,36 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap z {
             get {
                 object obj = ResourceManager.GetObject("z", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zzzzz {
+            get {
+                object obj = ResourceManager.GetObject("zzzzz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ZZZZZZZZZZZZZZZZZZ {
+            get {
+                object obj = ResourceManager.GetObject("ZZZZZZZZZZZZZZZZZZ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ZZZZZZZZZZZZZZZZZZ1 {
+            get {
+                object obj = ResourceManager.GetObject("ZZZZZZZZZZZZZZZZZZ1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

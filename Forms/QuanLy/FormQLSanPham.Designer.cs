@@ -35,13 +35,8 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnXemChiTiet = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.nudSoLuongThem = new System.Windows.Forms.NumericUpDown();
-            this.btnThemSoLuong = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
             this.cboSoLuong = new System.Windows.Forms.NumericUpDown();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
@@ -50,19 +45,24 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.flowSanPham = new System.Windows.Forms.FlowLayoutPanel();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnXemChiTiet = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.picHinhAnh = new System.Windows.Forms.PictureBox();
+            this.btnThemSoLuong = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongThem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboSoLuong)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -127,39 +127,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.label8.TabIndex = 15;
             this.label8.Text = "Tên sản phẩm:";
             // 
-            // btnXemChiTiet
-            // 
-            this.btnXemChiTiet.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnXemChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXemChiTiet.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemChiTiet.ForeColor = System.Drawing.Color.White;
-            this.btnXemChiTiet.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.circle_of_two_clockwise_arrows_rotation;
-            this.btnXemChiTiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXemChiTiet.Location = new System.Drawing.Point(17, 542);
-            this.btnXemChiTiet.Name = "btnXemChiTiet";
-            this.btnXemChiTiet.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnXemChiTiet.Size = new System.Drawing.Size(226, 40);
-            this.btnXemChiTiet.TabIndex = 18;
-            this.btnXemChiTiet.Text = "XEM ĐẦY ĐỦ";
-            this.btnXemChiTiet.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.delete_user;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(17, 496);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(226, 40);
-            this.btnXoa.TabIndex = 17;
-            this.btnXoa.Text = "XÓA SẢN PHẨM";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -171,16 +138,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.label9.TabIndex = 16;
             this.label9.Text = "NHẬP KHO";
             // 
-            // picHinhAnh
-            // 
-            this.picHinhAnh.BackColor = System.Drawing.Color.Transparent;
-            this.picHinhAnh.Location = new System.Drawing.Point(45, 72);
-            this.picHinhAnh.Name = "picHinhAnh";
-            this.picHinhAnh.Size = new System.Drawing.Size(170, 170);
-            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHinhAnh.TabIndex = 14;
-            this.picHinhAnh.TabStop = false;
-            // 
             // nudSoLuongThem
             // 
             this.nudSoLuongThem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,40 +145,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.nudSoLuongThem.Name = "nudSoLuongThem";
             this.nudSoLuongThem.Size = new System.Drawing.Size(228, 22);
             this.nudSoLuongThem.TabIndex = 13;
-            // 
-            // btnThemSoLuong
-            // 
-            this.btnThemSoLuong.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThemSoLuong.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThemSoLuong.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemSoLuong.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnThemSoLuong.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.add;
-            this.btnThemSoLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemSoLuong.Location = new System.Drawing.Point(17, 404);
-            this.btnThemSoLuong.Name = "btnThemSoLuong";
-            this.btnThemSoLuong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnThemSoLuong.Size = new System.Drawing.Size(226, 40);
-            this.btnThemSoLuong.TabIndex = 12;
-            this.btnThemSoLuong.Text = "NHẬP KHO";
-            this.btnThemSoLuong.UseVisualStyleBackColor = false;
-            this.btnThemSoLuong.Click += new System.EventHandler(this.btnThemSoLuong_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnThem.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.add;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(17, 450);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnThem.Size = new System.Drawing.Size(226, 40);
-            this.btnThem.TabIndex = 11;
-            this.btnThem.Text = "THÊM SẢN PHẨM MỚI";
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // cboSoLuong
             // 
@@ -255,20 +178,20 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.flowSanPham.AutoScroll = true;
             this.flowSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.flowSanPham.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowSanPham.Location = new System.Drawing.Point(0, 138);
+            this.flowSanPham.Location = new System.Drawing.Point(0, 144);
             this.flowSanPham.Name = "flowSanPham";
             this.flowSanPham.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.flowSanPham.Size = new System.Drawing.Size(885, 462);
+            this.flowSanPham.Size = new System.Drawing.Size(885, 456);
             this.flowSanPham.TabIndex = 3;
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtTimKiem.Location = new System.Drawing.Point(60, 78);
+            this.txtTimKiem.Location = new System.Drawing.Point(53, 103);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(404, 30);
+            this.txtTimKiem.Size = new System.Drawing.Size(404, 24);
             this.txtTimKiem.TabIndex = 22;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
@@ -281,29 +204,106 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(885, 138);
+            this.panel2.Size = new System.Drawing.Size(885, 144);
             this.panel2.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 35.75F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.Gold;
+            this.label4.Location = new System.Drawing.Point(12, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(604, 65);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "DANH SÁCH SẢN PHẨM";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.find;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 80);
+            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.loupe1;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 103);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // label4
+            // btnXemChiTiet
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gold;
-            this.label4.Location = new System.Drawing.Point(12, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(468, 50);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "DANH SÁCH SẢN PHẨM";
+            this.btnXemChiTiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(87)))));
+            this.btnXemChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXemChiTiet.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemChiTiet.ForeColor = System.Drawing.Color.White;
+            this.btnXemChiTiet.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.circle_of_two_clockwise_arrows_rotation;
+            this.btnXemChiTiet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXemChiTiet.Location = new System.Drawing.Point(17, 542);
+            this.btnXemChiTiet.Name = "btnXemChiTiet";
+            this.btnXemChiTiet.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnXemChiTiet.Size = new System.Drawing.Size(226, 40);
+            this.btnXemChiTiet.TabIndex = 18;
+            this.btnXemChiTiet.Text = "XEM ĐẦY ĐỦ";
+            this.btnXemChiTiet.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.remove;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(17, 496);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(226, 40);
+            this.btnXoa.TabIndex = 17;
+            this.btnXoa.Text = "XÓA SẢN PHẨM";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // picHinhAnh
+            // 
+            this.picHinhAnh.BackColor = System.Drawing.Color.Transparent;
+            this.picHinhAnh.Location = new System.Drawing.Point(45, 72);
+            this.picHinhAnh.Name = "picHinhAnh";
+            this.picHinhAnh.Size = new System.Drawing.Size(170, 170);
+            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHinhAnh.TabIndex = 14;
+            this.picHinhAnh.TabStop = false;
+            // 
+            // btnThemSoLuong
+            // 
+            this.btnThemSoLuong.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnThemSoLuong.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemSoLuong.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSoLuong.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnThemSoLuong.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.ZZZZZZZZZZZZZZZZZZ1;
+            this.btnThemSoLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemSoLuong.Location = new System.Drawing.Point(17, 404);
+            this.btnThemSoLuong.Name = "btnThemSoLuong";
+            this.btnThemSoLuong.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnThemSoLuong.Size = new System.Drawing.Size(226, 40);
+            this.btnThemSoLuong.TabIndex = 12;
+            this.btnThemSoLuong.Text = "NHẬP KHO";
+            this.btnThemSoLuong.UseVisualStyleBackColor = false;
+            this.btnThemSoLuong.Click += new System.EventHandler(this.btnThemSoLuong_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnThem.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.add_post;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(17, 450);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnThem.Size = new System.Drawing.Size(226, 40);
+            this.btnThem.TabIndex = 11;
+            this.btnThem.Text = "THÊM SẢN PHẨM MỚI";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // FormQLSanPham
             // 
@@ -319,12 +319,12 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.Load += new System.EventHandler(this.FormQLSanPham_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongThem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboSoLuong)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
             this.ResumeLayout(false);
 
         }

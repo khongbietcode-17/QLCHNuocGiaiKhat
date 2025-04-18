@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLCH_NuocGiaiKhat.CustomBackgroud;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +30,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void FormMain_QuanLy_Load(object sender, EventArgs e)
         {
+     
             lblNhanVien.Text = GetCount("NguoiDung").ToString();
             lblNCC.Text = GetCount("NhaCungCap").ToString();
             lblSP.Text = GetCount("SanPham").ToString();
@@ -207,24 +209,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
 
-                chart1.Series.Clear(); // Xóa dữ liệu cũ nếu có
-                chart1.Series.Add("SoLuongTheoNCC");
-                chart1.Series["SoLuongTheoNCC"].ChartType = SeriesChartType.Doughnut;
-
-                while (reader.Read())
-                {
-                    string maNCC = reader["MaNCC"].ToString();
-                    int soLuong = Convert.ToInt32(reader["TongSoLuong"]);
-                    chart1.Series["SoLuongTheoNCC"].Points.AddXY(maNCC, soLuong);
-                }
-
-                reader.Close();
             }
-
-            // Tuỳ chọn hiển thị
-            chart1.Legends[0].Enabled = true;
-            chart1.Series["SoLuongTheoNCC"]["PieLabelStyle"] = "Inside";
-            chart1.Series["SoLuongTheoNCC"].IsValueShownAsLabel = true;
         }
     }
 }

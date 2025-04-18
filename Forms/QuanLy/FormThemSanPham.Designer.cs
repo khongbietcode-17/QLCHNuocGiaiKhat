@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Button btnChonAnh;
-            this.btnThem = new System.Windows.Forms.Button();
+            System.Windows.Forms.Button button2;
             this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.cboMaNCC = new System.Windows.Forms.ComboBox();
             this.txtSoLuong = new System.Windows.Forms.NumericUpDown();
@@ -39,7 +39,6 @@
             this.txtGiaNhap = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
-            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,37 +49,28 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             btnChonAnh = new System.Windows.Forms.Button();
+            button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // btnChonAnh
             // 
-            btnChonAnh.BackColor = System.Drawing.Color.Goldenrod;
+            btnChonAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             btnChonAnh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnChonAnh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnChonAnh.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             btnChonAnh.Location = new System.Drawing.Point(29, 222);
             btnChonAnh.Name = "btnChonAnh";
-            btnChonAnh.Size = new System.Drawing.Size(150, 21);
+            btnChonAnh.Size = new System.Drawing.Size(76, 21);
             btnChonAnh.TabIndex = 22;
             btnChonAnh.Text = "Chọn ảnh";
             btnChonAnh.UseVisualStyleBackColor = false;
             btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnThem.Location = new System.Drawing.Point(29, 472);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(310, 41);
-            this.btnThem.TabIndex = 23;
-            this.btnThem.Text = "THÊM SẢN PHẨM MỚI";
-            this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtGhiChu
             // 
@@ -89,7 +79,6 @@
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(309, 102);
             this.txtGhiChu.TabIndex = 21;
-
             // 
             // cboMaNCC
             // 
@@ -164,15 +153,6 @@
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(149, 22);
             this.txtMaSP.TabIndex = 12;
-            // 
-            // picHinhAnh
-            // 
-            this.picHinhAnh.Location = new System.Drawing.Point(41, 89);
-            this.picHinhAnh.Name = "picHinhAnh";
-            this.picHinhAnh.Size = new System.Drawing.Size(120, 120);
-            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHinhAnh.TabIndex = 20;
-            this.picHinhAnh.TabStop = false;
             // 
             // label8
             // 
@@ -277,19 +257,79 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ForeColor = System.Drawing.Color.Gold;
             this.label10.Location = new System.Drawing.Point(34, 32);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(323, 37);
             this.label10.TabIndex = 33;
             this.label10.Text = "THÊM SẢN PHẨM MỚI";
             // 
+            // button2
+            // 
+            button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            button2.Location = new System.Drawing.Point(111, 222);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(68, 21);
+            button2.TabIndex = 35;
+            button2.Text = "Chụp";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.cancel3;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(30, 520);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(310, 41);
+            this.button1.TabIndex = 34;
+            this.button1.Text = "Hủy thêm sản phảm";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnThem
+            // 
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.add_post1;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(29, 472);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnThem.Size = new System.Drawing.Size(310, 41);
+            this.btnThem.TabIndex = 23;
+            this.btnThem.Text = "Xác nhận thêm sản phẩm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // picHinhAnh
+            // 
+            this.picHinhAnh.BackColor = System.Drawing.Color.Lavender;
+            this.picHinhAnh.Location = new System.Drawing.Point(41, 89);
+            this.picHinhAnh.Name = "picHinhAnh";
+            this.picHinhAnh.Size = new System.Drawing.Size(120, 120);
+            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHinhAnh.TabIndex = 20;
+            this.picHinhAnh.TabStop = false;
+            // 
             // FormThemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(385, 532);
+            this.BackColor = System.Drawing.Color.SlateBlue;
+            this.ClientSize = new System.Drawing.Size(381, 580);
+            this.Controls.Add(button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -312,6 +352,7 @@
             this.Controls.Add(this.txtGiaNhap);
             this.Controls.Add(this.txtTenSP);
             this.Controls.Add(this.txtMaSP);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThemSanPham";
             this.Text = " ";
@@ -346,5 +387,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button1;
     }
 }

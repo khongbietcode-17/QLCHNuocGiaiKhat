@@ -26,87 +26,59 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
-            this.pnlTaiKhoan = new System.Windows.Forms.Panel();
-            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
-            this.pnlMatKhau = new System.Windows.Forms.Panel();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblThongBao = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.pnlMatKhau = new System.Windows.Forms.Panel();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.pnlTaiKhoan = new System.Windows.Forms.Panel();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.picUser = new System.Windows.Forms.PictureBox();
             this.picLock = new System.Windows.Forms.PictureBox();
             this.picEye = new System.Windows.Forms.PictureBox();
-            this.pnlTaiKhoan.SuspendLayout();
+            this.picUser = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             this.pnlMatKhau.SuspendLayout();
+            this.pnlTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlTaiKhoan
+            // panel1
             // 
-            this.pnlTaiKhoan.BackColor = System.Drawing.Color.White;
-            this.pnlTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTaiKhoan.Controls.Add(this.picUser);
-            this.pnlTaiKhoan.Controls.Add(this.txtTaiKhoan);
-            this.pnlTaiKhoan.Location = new System.Drawing.Point(39, 261);
-            this.pnlTaiKhoan.Name = "pnlTaiKhoan";
-            this.pnlTaiKhoan.Size = new System.Drawing.Size(260, 40);
-            this.pnlTaiKhoan.TabIndex = 2;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblThongBao);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnDangNhap);
+            this.panel1.Controls.Add(this.picLogo);
+            this.panel1.Controls.Add(this.pnlMatKhau);
+            this.panel1.Controls.Add(this.pnlTaiKhoan);
+            this.panel1.Location = new System.Drawing.Point(730, 209);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(464, 513);
+            this.panel1.TabIndex = 8;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // txtTaiKhoan
+            // label2
             // 
-            this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(45, 10);
-            this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(210, 18);
-            this.txtTaiKhoan.TabIndex = 1;
-            // 
-            // pnlMatKhau
-            // 
-            this.pnlMatKhau.BackColor = System.Drawing.Color.White;
-            this.pnlMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlMatKhau.Controls.Add(this.picLock);
-            this.pnlMatKhau.Controls.Add(this.txtMatKhau);
-            this.pnlMatKhau.Controls.Add(this.picEye);
-            this.pnlMatKhau.Location = new System.Drawing.Point(39, 318);
-            this.pnlMatKhau.Name = "pnlMatKhau";
-            this.pnlMatKhau.Size = new System.Drawing.Size(260, 40);
-            this.pnlMatKhau.TabIndex = 3;
-            // 
-            // txtMatKhau
-            // 
-            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(45, 10);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(170, 18);
-            this.txtMatKhau.TabIndex = 1;
-            this.txtMatKhau.UseSystemPasswordChar = true;
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnDangNhap.FlatAppearance.BorderSize = 0;
-            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(39, 392);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(260, 40);
-            this.btnDangNhap.TabIndex = 4;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 22.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(101, 205);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(260, 57);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "ĐĂNG NHẬP";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblThongBao
             // 
             this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(39, 361);
+            this.lblThongBao.Location = new System.Drawing.Point(101, 371);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(260, 27);
             this.lblThongBao.TabIndex = 5;
@@ -115,45 +87,81 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(92, 452);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(153, 460);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 20);
+            this.label1.Size = new System.Drawing.Size(151, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "ĐÓNG PHẦN MỀM";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // btnDangNhap
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 22.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(39, 193);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(260, 57);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "ĐĂNG NHẬP";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDangNhap.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.Location = new System.Drawing.Point(101, 396);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(260, 40);
+            this.btnDangNhap.TabIndex = 4;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // pnlMatKhau
+            // 
+            this.pnlMatKhau.BackColor = System.Drawing.Color.White;
+            this.pnlMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMatKhau.Controls.Add(this.picLock);
+            this.pnlMatKhau.Controls.Add(this.txtMatKhau);
+            this.pnlMatKhau.Controls.Add(this.picEye);
+            this.pnlMatKhau.Location = new System.Drawing.Point(101, 328);
+            this.pnlMatKhau.Name = "pnlMatKhau";
+            this.pnlMatKhau.Size = new System.Drawing.Size(260, 40);
+            this.pnlMatKhau.TabIndex = 3;
+            // 
+            // txtMatKhau
+            // 
+            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMatKhau.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMatKhau.Location = new System.Drawing.Point(45, 11);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(170, 18);
+            this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhau.UseSystemPasswordChar = true;
+            // 
+            // pnlTaiKhoan
+            // 
+            this.pnlTaiKhoan.BackColor = System.Drawing.Color.White;
+            this.pnlTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTaiKhoan.Controls.Add(this.picUser);
+            this.pnlTaiKhoan.Controls.Add(this.txtTaiKhoan);
+            this.pnlTaiKhoan.Location = new System.Drawing.Point(101, 271);
+            this.pnlTaiKhoan.Name = "pnlTaiKhoan";
+            this.pnlTaiKhoan.Size = new System.Drawing.Size(260, 40);
+            this.pnlTaiKhoan.TabIndex = 2;
+            // 
+            // txtTaiKhoan
+            // 
+            this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTaiKhoan.Location = new System.Drawing.Point(41, 11);
+            this.txtTaiKhoan.Name = "txtTaiKhoan";
+            this.txtTaiKhoan.Size = new System.Drawing.Size(210, 18);
+            this.txtTaiKhoan.TabIndex = 1;
             // 
             // picLogo
             // 
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(70, 16);
+            this.picLogo.Location = new System.Drawing.Point(117, 8);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(200, 200);
+            this.picLogo.Size = new System.Drawing.Size(220, 220);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 0;
             this.picLogo.TabStop = false;
-            // 
-            // picUser
-            // 
-            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
-            this.picUser.Location = new System.Drawing.Point(5, 4);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(32, 32);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUser.TabIndex = 0;
-            this.picUser.TabStop = false;
             // 
             // picLock
             // 
@@ -177,36 +185,42 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.picEye.TabStop = false;
             this.picEye.Click += new System.EventHandler(this.picEye_Click);
             // 
+            // picUser
+            // 
+            this.picUser.Image = ((System.Drawing.Image)(resources.GetObject("picUser.Image")));
+            this.picUser.Location = new System.Drawing.Point(5, 3);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(32, 32);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 0;
+            this.picUser.TabStop = false;
+            // 
             // FormDangNhap
             // 
             this.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.ClientSize = new System.Drawing.Size(340, 492);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.picLogo);
-            this.Controls.Add(this.pnlTaiKhoan);
-            this.Controls.Add(this.pnlMatKhau);
-            this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.lblThongBao);
+            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.Load += new System.EventHandler(this.FormDangNhap_Load);
-            this.pnlTaiKhoan.ResumeLayout(false);
-            this.pnlTaiKhoan.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnlMatKhau.ResumeLayout(false);
             this.pnlMatKhau.PerformLayout();
+            this.pnlTaiKhoan.ResumeLayout(false);
+            this.pnlTaiKhoan.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         private Label label1;
         private Label label2;
+        private Panel panel1;
     }
 }

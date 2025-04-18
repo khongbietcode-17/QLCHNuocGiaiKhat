@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using QLCH_NuocGiaiKhat.CustomBackgroud;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -92,6 +94,22 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                     tran.Rollback();
                     MessageBox.Show("Lỗi khi thêm: " + ex.Message);
                 }
+            }
+        }
+       
+        private void FormThemNhanVien_Load(object sender, EventArgs e)
+        {
+            GradientPanel panelChinh = new GradientPanel();
+            panelChinh.Dock = DockStyle.Fill; // Dock vào toàn bộ form
+            this.Controls.Add(panelChinh);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormChupAnh f = new FormChupAnh();
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                picHinhAnh.Image = f.AnhDaChup;
             }
         }
     }

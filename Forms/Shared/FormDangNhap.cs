@@ -1,4 +1,5 @@
-﻿using QLCH_NuocGiaiKhat.Forms.NhanVien;
+﻿using QLCH_NuocGiaiKhat.CustomBackgroud;
+using QLCH_NuocGiaiKhat.Forms.NhanVien;
 using QLCH_NuocGiaiKhat.Forms.QuanLy;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,9 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
-
+            GradientPanel panelChinh = new GradientPanel();
+            panelChinh.Dock = DockStyle.Fill; // Dock vào toàn bộ form
+            this.Controls.Add(panelChinh);
         }
 
 
@@ -92,6 +95,11 @@ WHERE Nguoidung.Taikhoan = @tk AND Nguoidung.Matkhau = @mk";
         private void label1_Click(object sender, EventArgs e)
         {
             this.Close(); // Đóng form hiện tại
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

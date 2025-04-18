@@ -32,3 +32,14 @@ D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.csproj.CoreCompileInputs
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.exe
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.pdb
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.ucNguoiDung.resources
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.dll
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.Video.DirectShow.dll
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.Video.dll
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.xml
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.Video.xml
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\AForge.Video.DirectShow.xml
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.FormChupAnh.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_Nuo.D7C418A2.Up2Date
+D:\Code C#\QLCHNuocGiaiKhat\bin\Debug\dje\QLCH_NuocGiaiKhat.resources.dll
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.ucNguoiDung.dje.resources
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\dje\QLCH_NuocGiaiKhat.resources.dll

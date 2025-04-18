@@ -50,12 +50,13 @@
             this.txtMatkhau = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.flowNV = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnChupAnh = new System.Windows.Forms.Button();
             this.picAnhSua = new System.Windows.Forms.PictureBox();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowNV = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhSua)).BeginInit();
@@ -65,8 +66,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
-            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.txtTenTimKiem);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -79,29 +80,30 @@
             this.txtTenTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTenTimKiem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenTimKiem.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtTenTimKiem.Location = new System.Drawing.Point(85, 95);
+            this.txtTenTimKiem.Location = new System.Drawing.Point(23, 108);
             this.txtTenTimKiem.Multiline = true;
             this.txtTenTimKiem.Name = "txtTenTimKiem";
-            this.txtTenTimKiem.Size = new System.Drawing.Size(413, 21);
+            this.txtTenTimKiem.Size = new System.Drawing.Size(293, 24);
             this.txtTenTimKiem.TabIndex = 16;
             this.txtTenTimKiem.TextChanged += new System.EventHandler(this.txtTenTimKiem_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 35.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(35, 22);
+            this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(477, 50);
+            this.label1.Size = new System.Drawing.Size(618, 65);
             this.label1.TabIndex = 4;
             this.label1.Text = "DANH SÁCH NHÂN VIÊN";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
-            this.panel2.Controls.Add(this.btnChonAnh);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(68)))));
+            this.panel2.Controls.Add(this.btnChupAnh);
             this.panel2.Controls.Add(this.picAnhSua);
+            this.panel2.Controls.Add(this.btnChonAnh);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
@@ -131,13 +133,16 @@
             // 
             // btnChonAnh
             // 
-            this.btnChonAnh.ForeColor = System.Drawing.Color.Black;
-            this.btnChonAnh.Location = new System.Drawing.Point(72, 168);
+            this.btnChonAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnChonAnh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChonAnh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChonAnh.ForeColor = System.Drawing.Color.White;
+            this.btnChonAnh.Location = new System.Drawing.Point(21, 168);
             this.btnChonAnh.Name = "btnChonAnh";
-            this.btnChonAnh.Size = new System.Drawing.Size(120, 23);
+            this.btnChonAnh.Size = new System.Drawing.Size(113, 23);
             this.btnChonAnh.TabIndex = 18;
             this.btnChonAnh.Text = "Chọn ảnh";
-            this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.UseVisualStyleBackColor = false;
             this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // label10
@@ -308,18 +313,44 @@
             this.txtTaiKhoan.Size = new System.Drawing.Size(148, 25);
             this.txtTaiKhoan.TabIndex = 0;
             // 
+            // flowNV
+            // 
+            this.flowNV.AutoScroll = true;
+            this.flowNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.flowNV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowNV.Location = new System.Drawing.Point(0, 143);
+            this.flowNV.Name = "flowNV";
+            this.flowNV.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.flowNV.Size = new System.Drawing.Size(928, 457);
+            this.flowNV.TabIndex = 26;
+            // 
+            // btnChupAnh
+            // 
+            this.btnChupAnh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
+            this.btnChupAnh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnChupAnh.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChupAnh.ForeColor = System.Drawing.Color.White;
+            this.btnChupAnh.Location = new System.Drawing.Point(140, 168);
+            this.btnChupAnh.Name = "btnChupAnh";
+            this.btnChupAnh.Size = new System.Drawing.Size(110, 23);
+            this.btnChupAnh.TabIndex = 19;
+            this.btnChupAnh.Text = "Chụp ảnh";
+            this.btnChupAnh.UseVisualStyleBackColor = false;
+            this.btnChupAnh.Click += new System.EventHandler(this.btnChupAnh_Click);
+            // 
             // picAnhSua
             // 
-            this.picAnhSua.Location = new System.Drawing.Point(72, 42);
+            this.picAnhSua.BackColor = System.Drawing.Color.Silver;
+            this.picAnhSua.Location = new System.Drawing.Point(84, 44);
             this.picAnhSua.Name = "picAnhSua";
-            this.picAnhSua.Size = new System.Drawing.Size(120, 120);
+            this.picAnhSua.Size = new System.Drawing.Size(110, 110);
             this.picAnhSua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAnhSua.TabIndex = 17;
             this.picAnhSua.TabStop = false;
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(200)))), ((int)(((byte)(150)))));
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -336,7 +367,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
@@ -353,7 +384,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(87)))));
             this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.Transparent;
@@ -370,24 +401,14 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.find;
-            this.pictureBox1.Location = new System.Drawing.Point(44, 92);
+            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.loupe;
+            this.pictureBox1.Location = new System.Drawing.Point(322, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
-            // 
-            // flowNV
-            // 
-            this.flowNV.AutoScroll = true;
-            this.flowNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
-            this.flowNV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowNV.Location = new System.Drawing.Point(0, 143);
-            this.flowNV.Name = "flowNV";
-            this.flowNV.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.flowNV.Size = new System.Drawing.Size(928, 457);
-            this.flowNV.TabIndex = 26;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormQLNhanVien
             // 
@@ -442,5 +463,6 @@
         private System.Windows.Forms.PictureBox picAnhSua;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.FlowLayoutPanel flowNV;
+        private System.Windows.Forms.Button btnChupAnh;
     }
 }

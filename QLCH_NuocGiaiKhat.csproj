@@ -35,6 +35,15 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -44,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomBackgroud\GradientPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomBackgroud\TransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\NhanVien\FormMain_NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +70,12 @@
     </Compile>
     <Compile Include="Forms\QuanLy\FormChiTietSanPham.Designer.cs">
       <DependentUpon>FormChiTietSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormChupAnh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\FormChupAnh.Designer.cs">
+      <DependentUpon>FormChupAnh.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QuanLy\FormMain_QuanLy.cs">
       <SubType>Form</SubType>
@@ -124,6 +145,9 @@
     <EmbeddedResource Include="Forms\QuanLy\FormChiTietSanPham.resx">
       <DependentUpon>FormChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\FormChupAnh.resx">
+      <DependentUpon>FormChupAnh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\FormMain_QuanLy.resx">
       <DependentUpon>FormMain_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +169,9 @@
     <EmbeddedResource Include="Forms\QuanLy\FormThongKeDoanhSo.resx">
       <DependentUpon>FormThongKeDoanhSo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\ucNguoiDung.dje.resx">
+      <DependentUpon>ucNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\ucNguoiDung.resx">
       <DependentUpon>ucNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +192,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -287,6 +315,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%29 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-camera-interface-symbol-for-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-camera-interface-symbol-for-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zzzzz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28205 x 250 px%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOẠI SẢN PHẨM BÁN RA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADDP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADDP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZZZZZZZZZZZZZZZZZZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-camera-interface-symbol-for-button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZZZZZZZZZZZZZZZZZZ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-post1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

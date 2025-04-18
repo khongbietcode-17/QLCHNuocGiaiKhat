@@ -127,6 +127,18 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             LoadNhaCungCapVaoComboBox();
         }
 
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormChupAnh f = new FormChupAnh();
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                picHinhAnh.Image = f.AnhDaChup;
+            }
+        }
     }
 }
