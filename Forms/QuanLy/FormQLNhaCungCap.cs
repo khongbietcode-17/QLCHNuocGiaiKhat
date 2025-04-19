@@ -256,8 +256,8 @@ using (SqlConnection conn = new SqlConnection(chuoiketnoi))
                 txtMaNCC.Text = row.Cells[0].Value?.ToString();
                 txtTenNCC.Text = row.Cells[1].Value?.ToString();
                 txtDiaChi.Text = row.Cells[2].Value?.ToString();
-                txtEmail.Text = row.Cells[3].Value?.ToString();
-                txtSoDienThoai.Text = row.Cells[4].Value?.ToString();
+                txtEmail.Text = row.Cells[4].Value?.ToString();
+                txtSoDienThoai.Text = row.Cells[3].Value?.ToString();
                 txtGhiChu.Text = row.Cells[5].Value?.ToString();
             }
         }
@@ -324,6 +324,11 @@ using (SqlConnection conn = new SqlConnection(chuoiketnoi))
         }
 
         private void txtTenTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            TimKiemNCC();
+        }
+
+        private void txtTenTimKiem_TextChanged_1(object sender, EventArgs e)
         {
             TimKiemNCC();
         }

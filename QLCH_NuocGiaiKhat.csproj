@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomBackgroud\CirclePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomBackgroud\GradientPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -381,6 +384,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xanh dương Đại dương Thanh lịch Biểu ngữ Youtube %28737 x 590 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue &amp; White Modern Line Chart Graph %28460 x 348 px%29 %28460 x 184 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue &amp; White Modern Line Chart Graph %28460 x 348 px%29 %28460 x 184 px%29 %28460 x 158 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28227 x 348 mm%29 %28227 x 348 mm%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Simple Medical ID Card %28227 x 348 mm%29 %28227 x 348 mm%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue &amp; White Modern Line Chart Graph %281024 x 768 px%29 %28693 x 348 px%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGU-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AGU-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -125,6 +125,9 @@
   <data name="lblID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 35</value>
+  </data>
   <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 17</value>
   </data>
@@ -134,6 +137,9 @@
   <data name="lblEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 35</value>
+  </data>
   <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
   </data>
@@ -141,7 +147,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblHoTen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 96</value>
+    <value>108, 5</value>
   </data>
   <data name="lblSDT.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Light, 9.25pt</value>
@@ -150,7 +156,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 154</value>
+    <value>108, 59</value>
   </data>
   <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
@@ -161,6 +167,9 @@
   <data name="lblDiaChi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblDiaChi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 59</value>
+  </data>
   <data name="lblDiaChi.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 17</value>
   </data>
@@ -168,9 +177,15 @@
     <value>NoControl</value>
   </data>
   <data name="lblVaiTro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 223</value>
+    <value>109, 76</value>
   </data>
   <data name="picND.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="picND.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 5</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 282</value>
   </data>
 </root>

@@ -41,11 +41,11 @@
             // 
             this.lblTenSP.AutoSize = true;
             this.lblTenSP.BackColor = System.Drawing.Color.Transparent;
-            this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenSP.Font = new System.Drawing.Font("Segoe UI Black", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lblTenSP.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTenSP.Location = new System.Drawing.Point(18, 187);
+            this.lblTenSP.Location = new System.Drawing.Point(6, 164);
             this.lblTenSP.Name = "lblTenSP";
-            this.lblTenSP.Size = new System.Drawing.Size(57, 21);
+            this.lblTenSP.Size = new System.Drawing.Size(50, 19);
             this.lblTenSP.TabIndex = 1;
             this.lblTenSP.Text = "label1";
             // 
@@ -53,11 +53,11 @@
             // 
             this.lblMaSP.AutoSize = true;
             this.lblMaSP.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaSP.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaSP.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
             this.lblMaSP.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblMaSP.Location = new System.Drawing.Point(19, 214);
+            this.lblMaSP.Location = new System.Drawing.Point(8, 190);
             this.lblMaSP.Name = "lblMaSP";
-            this.lblMaSP.Size = new System.Drawing.Size(44, 15);
+            this.lblMaSP.Size = new System.Drawing.Size(39, 13);
             this.lblMaSP.TabIndex = 3;
             this.lblMaSP.Text = "label3";
             // 
@@ -65,11 +65,11 @@
             // 
             this.lblSoLuong.AutoSize = true;
             this.lblSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoLuong.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoLuong.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
             this.lblSoLuong.ForeColor = System.Drawing.Color.Gold;
-            this.lblSoLuong.Location = new System.Drawing.Point(19, 286);
+            this.lblSoLuong.Location = new System.Drawing.Point(8, 257);
             this.lblSoLuong.Name = "lblSoLuong";
-            this.lblSoLuong.Size = new System.Drawing.Size(44, 15);
+            this.lblSoLuong.Size = new System.Drawing.Size(39, 13);
             this.lblSoLuong.TabIndex = 5;
             this.lblSoLuong.Text = "label2";
             // 
@@ -77,11 +77,11 @@
             // 
             this.lblMaNCC.AutoSize = true;
             this.lblMaNCC.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaNCC.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaNCC.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
             this.lblMaNCC.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblMaNCC.Location = new System.Drawing.Point(19, 238);
+            this.lblMaNCC.Location = new System.Drawing.Point(8, 212);
             this.lblMaNCC.Name = "lblMaNCC";
-            this.lblMaNCC.Size = new System.Drawing.Size(44, 15);
+            this.lblMaNCC.Size = new System.Drawing.Size(39, 13);
             this.lblMaNCC.TabIndex = 8;
             this.lblMaNCC.Text = "label2";
             // 
@@ -89,20 +89,20 @@
             // 
             this.lblDonViTinh.AutoSize = true;
             this.lblDonViTinh.BackColor = System.Drawing.Color.Transparent;
-            this.lblDonViTinh.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDonViTinh.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Bold);
             this.lblDonViTinh.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.lblDonViTinh.Location = new System.Drawing.Point(19, 262);
+            this.lblDonViTinh.Location = new System.Drawing.Point(8, 235);
             this.lblDonViTinh.Name = "lblDonViTinh";
-            this.lblDonViTinh.Size = new System.Drawing.Size(44, 15);
+            this.lblDonViTinh.Size = new System.Drawing.Size(39, 13);
             this.lblDonViTinh.TabIndex = 9;
             this.lblDonViTinh.Text = "label2";
             // 
             // picSanPham
             // 
             this.picSanPham.BackColor = System.Drawing.Color.Transparent;
-            this.picSanPham.Location = new System.Drawing.Point(20, 10);
+            this.picSanPham.Location = new System.Drawing.Point(10, 8);
             this.picSanPham.Name = "picSanPham";
-            this.picSanPham.Size = new System.Drawing.Size(170, 170);
+            this.picSanPham.Size = new System.Drawing.Size(150, 150);
             this.picSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSanPham.TabIndex = 0;
             this.picSanPham.TabStop = false;
@@ -121,7 +121,7 @@
             this.Controls.Add(this.picSanPham);
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "ucSanPham";
-            this.Size = new System.Drawing.Size(210, 316);
+            this.Size = new System.Drawing.Size(170, 280);
             this.Load += new System.EventHandler(this.ucSanPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).EndInit();
             this.ResumeLayout(false);

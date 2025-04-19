@@ -45,19 +45,21 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.flowSanPham = new System.Windows.Forms.FlowLayoutPanel();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnXemChiTiet = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.btnThemSoLuong = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pnlTaiKhoan = new System.Windows.Forms.Panel();
+            this.picUser = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongThem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboSoLuong)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
+            this.pnlTaiKhoan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -178,55 +180,33 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.flowSanPham.AutoScroll = true;
             this.flowSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
             this.flowSanPham.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowSanPham.Location = new System.Drawing.Point(0, 144);
+            this.flowSanPham.Location = new System.Drawing.Point(0, 72);
             this.flowSanPham.Name = "flowSanPham";
             this.flowSanPham.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.flowSanPham.Size = new System.Drawing.Size(885, 456);
+            this.flowSanPham.Size = new System.Drawing.Size(885, 528);
             this.flowSanPham.TabIndex = 3;
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtTimKiem.Location = new System.Drawing.Point(53, 103);
+            this.txtTimKiem.Location = new System.Drawing.Point(25, 2);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(404, 24);
+            this.txtTimKiem.Size = new System.Drawing.Size(170, 21);
             this.txtTimKiem.TabIndex = 22;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pnlTaiKhoan);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtTimKiem);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(885, 144);
+            this.panel2.Size = new System.Drawing.Size(885, 72);
             this.panel2.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 35.75F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.Gold;
-            this.label4.Location = new System.Drawing.Point(12, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(604, 65);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "DANH SÁCH SẢN PHẨM";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.loupe1;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 103);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
             // 
             // btnXemChiTiet
             // 
@@ -305,6 +285,38 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(15, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(429, 46);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "DANH SÁCH SẢN PHẨM";
+            // 
+            // pnlTaiKhoan
+            // 
+            this.pnlTaiKhoan.BackColor = System.Drawing.Color.White;
+            this.pnlTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTaiKhoan.Controls.Add(this.picUser);
+            this.pnlTaiKhoan.Controls.Add(this.txtTimKiem);
+            this.pnlTaiKhoan.Location = new System.Drawing.Point(688, 24);
+            this.pnlTaiKhoan.Name = "pnlTaiKhoan";
+            this.pnlTaiKhoan.Size = new System.Drawing.Size(191, 25);
+            this.pnlTaiKhoan.TabIndex = 27;
+            // 
+            // picUser
+            // 
+            this.picUser.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.loupe3;
+            this.picUser.Location = new System.Drawing.Point(3, 3);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(16, 16);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUser.TabIndex = 0;
+            this.picUser.TabStop = false;
+            // 
             // FormQLSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -323,8 +335,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             ((System.ComponentModel.ISupportInitialize)(this.cboSoLuong)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
+            this.pnlTaiKhoan.ResumeLayout(false);
+            this.pnlTaiKhoan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,7 +364,8 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Label label4;
+        private Panel pnlTaiKhoan;
+        private PictureBox picUser;
     }
 }

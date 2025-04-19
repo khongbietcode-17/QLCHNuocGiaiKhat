@@ -117,259 +117,247 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;picND.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblHoTen.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblID.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;picND.Name" xml:space="preserve">
-    <value>picND</value>
-  </data>
-  <data name="&gt;&gt;lblHoTen.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picND.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 90</value>
+  <data name="lblID.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Black, 8.25pt</value>
   </data>
-  <data name="lblVaiTro.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lblSDT.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblDiaChi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
-  </data>
-  <data name="&gt;&gt;picND.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 78</value>
   </data>
   <data name="lblID.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
   </data>
-  <data name="lblDiaChi.Text" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="lblDiaChi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 204</value>
-  </data>
-  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
-  </data>
-  <data name="lblHoTen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 96</value>
-  </data>
-  <data name="lblTK.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblID.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblDiaChi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;picND.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="picND.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lblHoTen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 16.25pt, style=Bold</value>
-  </data>
-  <data name="lblSDT.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 8.25pt</value>
-  </data>
-  <data name="lblDiaChi.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblHoTen.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblHoTen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblTK.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 8.25pt</value>
-  </data>
-  <data name="&gt;&gt;lblTK.Name" xml:space="preserve">
-    <value>lblTK</value>
-  </data>
   <data name="lblID.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="lblDiaChi.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblSDT.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lblTK.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lblID.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblDiaChi.Name" xml:space="preserve">
-    <value>lblDiaChi</value>
-  </data>
-  <data name="lblDiaChi.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 8.25pt</value>
-  </data>
-  <data name="lblVaiTro.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 10.25pt</value>
-  </data>
-  <data name="&gt;&gt;lblID.Name" xml:space="preserve">
-    <value>lblID</value>
-  </data>
-  <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblVaiTro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 221</value>
-  </data>
-  <data name="&gt;&gt;lblSDT.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblEmail.Text" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;lblID.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblTK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblTK.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="lblID.Text" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="&gt;&gt;lblVaiTro.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;lblID.Name" xml:space="preserve">
+    <value>lblID</value>
   </data>
-  <data name="lblVaiTro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 19</value>
-  </data>
-  <data name="&gt;&gt;lblSDT.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblID.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
-    <value>lblEmail</value>
-  </data>
-  <data name="picND.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 3</value>
-  </data>
-  <data name="&gt;&gt;lblEmail.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblID.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 185</value>
+  <data name="&gt;&gt;lblID.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="lblVaiTro.Text" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;lblHoTen.Name" xml:space="preserve">
-    <value>lblHoTen</value>
-  </data>
-  <data name="lblSDT.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblVaiTro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblVaiTro.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblSDT.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 166</value>
-  </data>
-  <data name="&gt;&gt;lblSDT.Name" xml:space="preserve">
-    <value>lblSDT</value>
-  </data>
-  <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ucNguoiDung</value>
-  </data>
-  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 13</value>
-  </data>
-  <data name="lblHoTen.Text" xml:space="preserve">
-    <value>Tô Trung Tín</value>
-  </data>
-  <data name="&gt;&gt;lblTK.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;lblDiaChi.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblTK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 147</value>
-  </data>
-  <data name="&gt;&gt;lblVaiTro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Black, 8.25pt</value>
-  </data>
-  <data name="lblTK.Text" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;lblVaiTro.Name" xml:space="preserve">
-    <value>lblVaiTro</value>
-  </data>
-  <data name="lblHoTen.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="lblSDT.Text" xml:space="preserve">
-    <value>label5</value>
   </data>
   <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI Black, 8.25pt</value>
   </data>
-  <data name="lblID.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 128</value>
+  <data name="lblEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>205, 250</value>
+  <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 97</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="picND.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
+    <value>lblEmail</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblHoTen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblHoTen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Black, 14pt, style=Bold</value>
+  </data>
+  <data name="lblHoTen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblHoTen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 11</value>
+  </data>
+  <data name="lblHoTen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 25</value>
+  </data>
+  <data name="lblHoTen.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblHoTen.Text" xml:space="preserve">
+    <value>Tô Trung Tín</value>
+  </data>
+  <data name="&gt;&gt;lblHoTen.Name" xml:space="preserve">
+    <value>lblHoTen</value>
+  </data>
+  <data name="&gt;&gt;lblHoTen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblHoTen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblHoTen.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblSDT.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblSDT.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Black, 8.25pt</value>
+  </data>
+  <data name="lblSDT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblSDT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 59</value>
+  </data>
+  <data name="lblSDT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="lblSDT.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblSDT.Text" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;lblSDT.Name" xml:space="preserve">
+    <value>lblSDT</value>
+  </data>
+  <data name="&gt;&gt;lblSDT.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSDT.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblSDT.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblDiaChi.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblDiaChi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Black, 8.25pt</value>
+  </data>
+  <data name="lblDiaChi.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblDiaChi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 41</value>
+  </data>
+  <data name="lblDiaChi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="lblDiaChi.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblDiaChi.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChi.Name" xml:space="preserve">
+    <value>lblDiaChi</value>
   </data>
   <data name="&gt;&gt;lblDiaChi.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblTK.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;lblDiaChi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblDiaChi.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblVaiTro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblVaiTro.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Black, 8.25pt</value>
+  </data>
+  <data name="lblVaiTro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblVaiTro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 116</value>
+  </data>
+  <data name="lblVaiTro.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 13</value>
   </data>
-  <data name="lblHoTen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 30</value>
+  <data name="lblVaiTro.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblVaiTro.Text" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;lblVaiTro.Name" xml:space="preserve">
+    <value>lblVaiTro</value>
+  </data>
+  <data name="&gt;&gt;lblVaiTro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblVaiTro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblVaiTro.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picND.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picND.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 21</value>
+  </data>
+  <data name="picND.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="picND.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="picND.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;picND.Name" xml:space="preserve">
+    <value>picND</value>
+  </data>
+  <data name="&gt;&gt;picND.Type" xml:space="preserve">
+    <value>QLCH_NuocGiaiKhat.CustomBackgroud.CirclePictureBox, QLCH_NuocGiaiKhat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;picND.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;picND.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>dje</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 142</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ucNguoiDung</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

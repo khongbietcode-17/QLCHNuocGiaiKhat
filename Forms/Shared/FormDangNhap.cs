@@ -24,9 +24,19 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
+            Rectangle screen = Screen.PrimaryScreen.Bounds;
+
+            // Gán kích thước form bằng với màn hình
+            this.Width = screen.Width;
+            this.Height = screen.Height;
+
+            // (Tùy chọn) Đặt form ở vị trí góc trái trên cùng
+            this.Location = new Point(0, 0);
             GradientPanel panelChinh = new GradientPanel();
             panelChinh.Dock = DockStyle.Fill; // Dock vào toàn bộ form
             this.Controls.Add(panelChinh);
+            panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
+            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
         }
 
 

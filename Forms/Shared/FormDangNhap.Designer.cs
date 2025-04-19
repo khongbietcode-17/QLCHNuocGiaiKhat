@@ -35,6 +35,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.pnlTaiKhoan = new System.Windows.Forms.Panel();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.picLock = new System.Windows.Forms.PictureBox();
             this.picEye = new System.Windows.Forms.PictureBox();
@@ -42,6 +43,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.panel1.SuspendLayout();
             this.pnlMatKhau.SuspendLayout();
             this.pnlTaiKhoan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).BeginInit();
@@ -51,6 +53,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblThongBao);
             this.panel1.Controls.Add(this.label1);
@@ -58,17 +61,17 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.panel1.Controls.Add(this.picLogo);
             this.panel1.Controls.Add(this.pnlMatKhau);
             this.panel1.Controls.Add(this.pnlTaiKhoan);
-            this.panel1.Location = new System.Drawing.Point(730, 209);
+            this.panel1.Location = new System.Drawing.Point(28, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 513);
+            this.panel1.Size = new System.Drawing.Size(1112, 590);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 22.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(101, 205);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 24.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(55, 266);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 57);
             this.label2.TabIndex = 7;
@@ -77,8 +80,8 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             // lblThongBao
             // 
-            this.lblThongBao.ForeColor = System.Drawing.Color.Red;
-            this.lblThongBao.Location = new System.Drawing.Point(101, 371);
+            this.lblThongBao.ForeColor = System.Drawing.Color.Yellow;
+            this.lblThongBao.Location = new System.Drawing.Point(55, 436);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(260, 27);
             this.lblThongBao.TabIndex = 5;
@@ -87,9 +90,10 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(153, 460);
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(107, 546);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 21);
             this.label1.TabIndex = 6;
@@ -98,12 +102,12 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(101, 396);
+            this.btnDangNhap.Location = new System.Drawing.Point(55, 466);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(260, 40);
             this.btnDangNhap.TabIndex = 4;
@@ -118,7 +122,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlMatKhau.Controls.Add(this.picLock);
             this.pnlMatKhau.Controls.Add(this.txtMatKhau);
             this.pnlMatKhau.Controls.Add(this.picEye);
-            this.pnlMatKhau.Location = new System.Drawing.Point(101, 328);
+            this.pnlMatKhau.Location = new System.Drawing.Point(55, 392);
             this.pnlMatKhau.Name = "pnlMatKhau";
             this.pnlMatKhau.Size = new System.Drawing.Size(260, 40);
             this.pnlMatKhau.TabIndex = 3;
@@ -139,7 +143,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTaiKhoan.Controls.Add(this.picUser);
             this.pnlTaiKhoan.Controls.Add(this.txtTaiKhoan);
-            this.pnlTaiKhoan.Location = new System.Drawing.Point(101, 271);
+            this.pnlTaiKhoan.Location = new System.Drawing.Point(55, 335);
             this.pnlTaiKhoan.Name = "pnlTaiKhoan";
             this.pnlTaiKhoan.Size = new System.Drawing.Size(260, 40);
             this.pnlTaiKhoan.TabIndex = 2;
@@ -148,15 +152,26 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             this.txtTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTaiKhoan.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(41, 11);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(45, 11);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(210, 18);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(206, 18);
             this.txtTaiKhoan.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox1.Image = global::QLCH_NuocGiaiKhat.Properties.Resources.Xanh_dương_Đại_dương_Thanh_lịch_Biểu_ngữ_Youtube__737_x_590_px_;
+            this.pictureBox1.Location = new System.Drawing.Point(375, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(737, 590);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // picLogo
             // 
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(117, 8);
+            this.picLogo.Location = new System.Drawing.Point(72, 45);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(220, 220);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,6 +226,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlMatKhau.PerformLayout();
             this.pnlTaiKhoan.ResumeLayout(false);
             this.pnlTaiKhoan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEye)).EndInit();
@@ -222,5 +238,6 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
         private Label label1;
         private Label label2;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

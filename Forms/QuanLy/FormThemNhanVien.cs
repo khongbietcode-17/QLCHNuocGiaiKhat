@@ -99,9 +99,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
        
         private void FormThemNhanVien_Load(object sender, EventArgs e)
         {
-            GradientPanel panelChinh = new GradientPanel();
-            panelChinh.Dock = DockStyle.Fill; // Dock vào toàn bộ form
-            this.Controls.Add(panelChinh);
+      
         }
 
         private void button2_Click(object sender, EventArgs e)

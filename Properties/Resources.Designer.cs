@@ -113,9 +113,70 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AGU {
+            get {
+                object obj = ResourceManager.GetObject("AGU", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AGU_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("AGU-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AGU_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("AGU-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap b60 {
             get {
                 object obj = ResourceManager.GetObject("b60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue___White_Modern_Line_Chart_Graph__1024_x_768_px___693_x_348_px_ {
+            get {
+                object obj = ResourceManager.GetObject("Blue & White Modern Line Chart Graph (1024 x 768 px) (693 x 348 px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue___White_Modern_Line_Chart_Graph__460_x_348_px___460_x_184_px_ {
+            get {
+                object obj = ResourceManager.GetObject("Blue & White Modern Line Chart Graph (460 x 348 px) (460 x 184 px)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Blue___White_Modern_Line_Chart_Graph__460_x_348_px___460_x_184_px___460_x_158_px_ {
+            get {
+                object obj = ResourceManager.GetObject("Blue & White Modern Line Chart Graph (460 x 348 px) (460 x 184 px) (460 x 158 px)" +
+                        "", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +284,26 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coin {
+            get {
+                object obj = ResourceManager.GetObject("coin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coin1 {
+            get {
+                object obj = ResourceManager.GetObject("coin1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CỬA_HÀNG_NƯỚC_GIẢI_KHÁT {
             get {
                 object obj = ResourceManager.GetObject("CỬA HÀNG NƯỚC GIẢI KHÁT", resourceCulture);
@@ -323,6 +404,26 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Green_Simple_Medical_ID_Card__227_x_348_mm___227_x_348_mm_ {
+            get {
+                object obj = ResourceManager.GetObject("Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_Simple_Medical_ID_Card__227_x_348_mm___227_x_348_mm_1 {
+            get {
+                object obj = ResourceManager.GetObject("Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hidden {
             get {
                 object obj = ResourceManager.GetObject("hidden", resourceCulture);
@@ -386,6 +487,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap loupe2 {
             get {
                 object obj = ResourceManager.GetObject("loupe2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loupe3 {
+            get {
+                object obj = ResourceManager.GetObject("loupe3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -586,6 +697,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap update {
             get {
                 object obj = ResourceManager.GetObject("update", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Xanh_dương_Đại_dương_Thanh_lịch_Biểu_ngữ_Youtube__737_x_590_px_ {
+            get {
+                object obj = ResourceManager.GetObject("Xanh dương Đại dương Thanh lịch Biểu ngữ Youtube (737 x 590 px)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

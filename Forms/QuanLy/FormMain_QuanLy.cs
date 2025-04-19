@@ -30,11 +30,19 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void FormMain_QuanLy_Load(object sender, EventArgs e)
         {
-     
+ 
+
+            panelChuyenDong.Location = button4.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = button4.Height;
+
             lblNhanVien.Text = GetCount("NguoiDung").ToString();
             lblNCC.Text = GetCount("NhaCungCap").ToString();
             lblSP.Text = GetCount("SanPham").ToString();
             LoadSoDoTron();
+         
+            
         }
         private int GetCount(string tableName)
         {
@@ -61,10 +69,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 {
                     sidebarExpand = false;
                     siderbarTransition.Stop();
-                    pnQLNCC.Width = sider.Width;
-                    pnQLNV.Width = sider.Width;
-                    pnQLSP.Width = sider.Width;
-                    pnTKDS.Width = sider.Width;
+              
                 }
             }
             else
@@ -74,10 +79,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 {
                     sidebarExpand = true;
                     siderbarTransition.Stop();
-                    pnQLNCC.Width = sider.Width;
-                    pnQLNV.Width = sider.Width;
-                    pnQLSP.Width = sider.Width;
-                    pnTKDS.Width = sider.Width;
+  
 
                 }
             }
@@ -87,6 +89,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         // Xử Lý Nhấn Vào Thanh Chọn 
         private void btnQLNV_Click(object sender, EventArgs e)
         {
+            panelChuyenDong.Location = btnQLNV.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = btnQLNV.Height;
             // Nếu form đã được khởi tạo trước đó, đóng lại để làm mới
             if (QLNhanVien != null)
             {
@@ -112,6 +118,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
+            panelChuyenDong.Location = btnThongKe.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = btnThongKe.Height;
             // Nếu form đã được mở trước đó thì đóng và khởi tạo lại
             if (ThongKeDoanhSo != null)
             {
@@ -123,7 +133,6 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             ThongKeDoanhSo.TopLevel = false;
             ThongKeDoanhSo.FormBorderStyle = FormBorderStyle.None;
             ThongKeDoanhSo.Dock = DockStyle.Fill;
-
             CloseEmbeddedForms(panel3);
             panel3.Controls.Add(ThongKeDoanhSo);
             ThongKeDoanhSo.Show();
@@ -132,6 +141,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void btnQLNCC_Click(object sender, EventArgs e)
         {
+            panelChuyenDong.Location = btnQLNCC.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = btnQLNCC.Height;
             // Nếu form đã được mở, đóng lại để làm mới
             if (QLNhaCungCap != null)
             {
@@ -152,6 +165,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void btnQLSP_Click(object sender, EventArgs e)
         {
+            panelChuyenDong.Location = btnQLSP.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = btnQLSP.Height;
             // Nếu form đã được khởi tạo trước đó, đóng lại để làm mới
             if (QLSanPham != null)
             {
@@ -172,7 +189,12 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void button1_Click(object sender, EventArgs e)
         {
+            panelChuyenDong.Location = button3.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = button3.Height;
             siderbarTransition.Start();
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -182,6 +204,12 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+
+            panelChuyenDong.Location = button4.Location;
+            panelChuyenDong.Visible = true;
+            panelChuyenDong.BringToFront();
+            panelChuyenDong.Height = button4.Height;
+
             CloseEmbeddedForms(panel3);
             lblNhanVien.Text = GetCount("NguoiDung").ToString();
             lblNCC.Text = GetCount("NhaCungCap").ToString();
@@ -210,6 +238,26 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 SqlDataReader reader = cmd.ExecuteReader();
 
             }
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblNCC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

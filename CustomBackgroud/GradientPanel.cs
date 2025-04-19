@@ -11,8 +11,8 @@ namespace QLCH_NuocGiaiKhat.CustomBackgroud
         private int borderRadius = 20;
         private float angle = 45;
 
-        private Color color0 = ColorTranslator.FromHtml("#B22222"); // GTA V style màu 1
-        private Color color1 = ColorTranslator.FromHtml("#191970"); // GTA V style màu 2
+        private Color color0 = ColorTranslator.FromHtml("#FFFFFF"); // Màu trắng
+        private Color color1 = ColorTranslator.FromHtml("#4169E1"); // Xanh dương (DodgerBlue)
 
         private Timer timer = new Timer();
 
@@ -20,7 +20,7 @@ namespace QLCH_NuocGiaiKhat.CustomBackgroud
         public GradientPanel()
         {
             DoubleBuffered = true;
-            timer.Interval = 20; // chậm hơn để mượt
+            timer.Interval = 1; // nhanh gấp đôi
             timer.Tick += Timer_Tick;
             timer.Start();
         }
