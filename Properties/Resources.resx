@@ -142,14 +142,17 @@
   <data name="Blue &amp; White Modern Line Chart Graph (1024 x 768 px) (693 x 348 px)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blue &amp; White Modern Line Chart Graph (1024 x 768 px) (693 x 348 px).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add-post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hot-sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hot-sale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +163,17 @@
   <data name="circle-of-two-clockwise-arrows-rotation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circle-of-two-clockwise-arrows-rotation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chưa có tên (10 x 20 cm)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chưa có tên (10 x 20 cm)1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loupe3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loupe3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ADDP" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ADDP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="u601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\u601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,6 +217,9 @@
   <data name="LOẠI SẢN PHẨM BÁN RA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOẠI SẢN PHẨM BÁN RA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Thiết kế chưa có tên1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Thiết kế chưa có tên1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,6 +256,9 @@
   <data name="CỬA HÀNG NƯỚC GIẢI KHÁT" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CỬA HÀNG NƯỚC GIẢI KHÁT.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="p601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye (1).png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,14 +277,20 @@
   <data name="Green Simple Medical ID Card (205 x 250 px)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Green Simple Medical ID Card (205 x 250 px)2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZZZAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZZZAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="p60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\p60.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,9 +301,6 @@
   <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Chưa có tên (10 x 20 cm)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chưa có tên (10 x 20 cm)1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="AGU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AGU.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -292,11 +310,11 @@
   <data name="Green Simple Medical ID Card (205 x 250 px) (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Green Simple Medical ID Card (205 x 250 px) (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coin1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="find" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\find.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="coin3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="snapedit_1744706502167" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snapedit_1744706502167.jpeg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -306,6 +324,9 @@
   </data>
   <data name="AGU-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AGU-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Green Simple Medical ID Card (227 x 348 mm) (227 x 348 mm).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="photo-camera-interface-symbol-for-button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo-camera-interface-symbol-for-button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,7 +343,7 @@
   <data name="order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loupe3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loupe3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coin4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

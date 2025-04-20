@@ -111,5 +111,58 @@ WHERE Nguoidung.Taikhoan = @tk AND Nguoidung.Matkhau = @mk";
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            QuetQR f = new QuetQR();
+            using (var formQR = new QuetQR())
+            {
+                if (formQR.ShowDialog() == DialogResult.OK)
+                {
+                    string scannedID = formQR.Tag.ToString();
+
+                    using (SqlConnection conn = new SqlConnection(chuoiketnoi))
+                    {
+                        string query = @"
+SELECT Nguoidung.Vaitro, ThongTinNguoiDung.HoTen 
+FROM Nguoidung 
+INNER JOIN ThongTinNguoiDung ON Nguoidung.ID = ThongTinNguoiDung.IDNguoiDung 
+WHERE Nguoidung.ID = @id";
+
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        cmd.Parameters.AddWithValue("@id", scannedID);
+
+                        conn.Open();
+                        SqlDataReader reader = cmd.ExecuteReader();
+                        if (reader.Read())
+                        {
+                            string vaitro = reader["Vaitro"].ToString();
+                            string hoten = reader["HoTen"].ToString();
+
+                            if (vaitro == "QuanLy")
+                            {
+                                FormMain_QuanLy formQL = new FormMain_QuanLy(hoten);
+                                this.Hide();
+                                formQL.ShowDialog();
+                                this.Show();
+                            }
+                            else if (vaitro == "NhanVien")
+                            {
+                                FormMain_NhanVien formNV = new FormMain_NhanVien(hoten);
+                                this.Hide();
+                                formNV.ShowDialog();
+                                this.Show();
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy người dùng với ID này!");
+                        }
+
+                        reader.Close();
+                    }
+                }
+            }
+        }
     }
 }

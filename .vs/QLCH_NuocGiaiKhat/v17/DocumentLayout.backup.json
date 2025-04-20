@@ -3,84 +3,123 @@
   "WorkspaceRootPath": "D:\\Code C#\\QLCHNuocGiaiKhat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\shared\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\shared\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\shared\\quetqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\shared\\quetqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\shared\\quetqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\shared\\quetqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\shared\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\shared\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\shared\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\shared\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhacungcap\\formqlnhacungcap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhacungcap\\formqlnhacungcap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainbaocao\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainbaocao\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainbaocao\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainbaocao\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhacungcap\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhacungcap\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\shared\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\shared\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\ucnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainbaocao\\formthongkedoanhso.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainbaocao\\formthongkedoanhso.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\shared\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\shared\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formqlsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formqlsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthongkedoanhso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formmain_quanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\ucnguoidung.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\ucnguoidung.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formchitietsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\shared\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\shared\\formdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QLCH_NuocGiaiKhat||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\ucnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\ucnguoidung.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhacungcap\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhacungcap\\formqlnhacungcap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\nhanvien\\formmain_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\nhanvien\\formmain_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\ucsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\ucnguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\ucnguoidung.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\ucnguoidung.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\custombackgroud\\gradientpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,10 +130,7 @@
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:custombackgroud\\gradientpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QLCH_NuocGiaiKhat||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
@@ -110,40 +146,20 @@
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:custombackgroud\\circlepicturebox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\shared\\formchupanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\shared\\formchupanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formchupanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formthemnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formthemnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhacungcap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhacungcap.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formchupanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formchupanh.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\nhanvien\\formmain_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\nhanvien\\formmain_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formqlsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formqlsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\custombackgroud\\transparenttextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -154,16 +170,16 @@
       "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:custombackgroud\\transparenttextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlsanpham.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlsanpham.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formqlsanpham.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formqlsanpham.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formthemsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formthemsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainsanpham\\formthemsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainsanpham\\formthemsanpham.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|D:\\Code C#\\QLCHNuocGiaiKhat\\forms\\quanly\\formqlnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\formqlnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\forms\\quanly\\mainnhanvien\\formqlnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|solutionrelative:forms\\quanly\\mainnhanvien\\formqlnhanvien.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{134B34DA-95C0-46AD-82D5-017E443BAC50}|QLCH_NuocGiaiKhat.csproj|d:\\code c#\\qlchnuocgiaikhat\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
@@ -176,65 +192,180 @@
       "DocumentGroups": [
         {
           "DockedHeight": 98,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ucNguoiDung.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucNguoiDung.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\ucNguoiDung.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:38:59.989Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "FormThongKeDoanhSo.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T06:51:11.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QuetQR.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\QuetQR.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\QuetQR.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\QuetQR.cs [Design]*",
+              "RelativeToolTip": "Forms\\Shared\\QuetQR.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:41:03.619Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuetQR.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\QuetQR.cs",
+              "RelativeDocumentMoniker": "Forms\\Shared\\QuetQR.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\QuetQR.cs*",
+              "RelativeToolTip": "Forms\\Shared\\QuetQR.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAiwD0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T05:43:23.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormQLNhaCungCap.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.Designer.cs",
+              "ViewState": "AgIAAKUBAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T03:04:32.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormChupAnh.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\Shared\\FormChupAnh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:17:08.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FormMain_QuanLy.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormMain_QuanLy.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormMain_QuanLy.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs [Design]*",
+              "RelativeToolTip": "Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T01:26:49.349Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ucNguoiDung.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucNguoiDung.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\ucNguoiDung.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAwDYAAAADAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "FormThongKeDoanhSo.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:51:00.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ucNguoiDung.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucNguoiDung.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\ucNguoiDung.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:51:06.38Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T14:52:18.172Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FormChupAnh.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\Shared\\FormChupAnh.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADgv0IAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:19:00.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormThemSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:52:36.448Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T07:21:02.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormThemNhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T14:57:34.126Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormQLNhaCungCap.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:03:33.829Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormQLNhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:20:15.669Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "FormDangNhap.cs [Design]",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\FormDangNhap.cs",
@@ -246,160 +377,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ucSanPham.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucSanPham.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\ucSanPham.cs [Design]",
+              "DocumentIndex": 14,
+              "Title": "FormThongKeDoanhSo.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainBaoCao\\FormThongKeDoanhSo.Designer.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAADgvzwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T18:36:22.135Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ucSanPham.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucSanPham.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\ucSanPham.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-19T09:00:05.701Z",
+              "WhenOpened": "2025-04-20T08:32:07.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormThemSanPham.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemSanPham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:52:36.448Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormQLNhaCungCap.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhaCungCap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T17:03:33.829Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormQLNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhanVien.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:20:15.669Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "FormQLSanPham.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T15:21:18.563Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormThemNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemNhanVien.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T14:57:34.126Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FormThongKeDoanhSo.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThongKeDoanhSo.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThongKeDoanhSo.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThongKeDoanhSo.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThongKeDoanhSo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T14:52:18.172Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FormThemNhanVien.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemNhanVien.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemNhanVien.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAwGUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T01:48:24.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormQLNhaCungCap.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhaCungCap.cs",
-              "ViewState": "AgIAADUBAAAAAAAAAAAAwEwBAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T17:03:34.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 15,
               "Title": "FormMain_QuanLy.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormMain_QuanLy.cs",
-              "ViewState": "AgIAAO8AAAAAAAAAAAAIwAMBAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs*",
+              "RelativeToolTip": "Forms\\QuanLy\\Shared\\FormMain_QuanLy.cs*",
+              "ViewState": "AgIAAHsAAAAAAAAAAAArwI8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T01:40:59.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FormChupAnh.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormChupAnh.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormChupAnh.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:17:08.316Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
               "Title": "FormChiTietSanPham.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChiTietSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormChiTietSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChiTietSanPham.cs [Design]",
-              "RelativeToolTip": "Forms\\QuanLy\\FormChiTietSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormChiTietSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormChiTietSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormChiTietSanPham.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormChiTietSanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T01:40:21.124Z",
               "EditorCaption": " [Design]"
@@ -407,31 +428,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "ucNguoiDung.resx",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.resx",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\ucNguoiDung.resx",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\ucNguoiDung.resx",
-              "RelativeToolTip": "Forms\\QuanLy\\ucNguoiDung.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-19T05:50:46.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "FormDangNhap.cs",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\FormDangNhap.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\FormDangNhap.cs",
               "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\FormDangNhap.cs",
               "RelativeToolTip": "Forms\\Shared\\FormDangNhap.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAuwEcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAawEcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:15:20.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
+              "Title": "FormQLNhanVien.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.cs",
+              "ViewState": "AgIAAEQBAAAAAAAAAADgv1sBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:20:30.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "QLCH_NuocGiaiKhat",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\QLCH_NuocGiaiKhat.csproj",
               "RelativeDocumentMoniker": "QLCH_NuocGiaiKhat.csproj",
@@ -443,7 +465,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
+              "Title": "FormThemNhanVien.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAADgv2oAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T01:48:24.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ucNguoiDung.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:38:59.989Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ucNguoiDung.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.Designer.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAHgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:51:06.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FormQLNhaCungCap.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhaCungCap\\FormQLNhaCungCap.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAiwPwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T17:03:34.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FormMain_NhanVien.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\NhanVien\\FormMain_NhanVien.cs",
+              "RelativeDocumentMoniker": "Forms\\NhanVien\\FormMain_NhanVien.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\NhanVien\\FormMain_NhanVien.cs [Design]",
+              "RelativeToolTip": "Forms\\NhanVien\\FormMain_NhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T02:45:34.72Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ucNguoiDung.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAwDYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T15:51:00.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ucSanPham.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T09:00:05.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ucSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\ucSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\ucSanPham.cs [Design]",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\ucSanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T18:36:22.135Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ucNguoiDung.resx",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.resx",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.resx",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.resx",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\ucNguoiDung.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-04-19T05:50:46.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "GradientPanel.cs",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\GradientPanel.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\GradientPanel.cs",
@@ -456,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "GradientPanel.cs [Design]",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\GradientPanel.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\GradientPanel.cs",
@@ -468,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "Resources.resx",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
@@ -481,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "FormDangNhap.Designer.cs",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\Shared\\FormDangNhap.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\Shared\\FormDangNhap.Designer.cs",
@@ -494,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "CirclePictureBox.cs [Design]",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\CirclePictureBox.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\CirclePictureBox.cs",
@@ -506,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "CirclePictureBox.cs",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\CirclePictureBox.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\CirclePictureBox.cs",
@@ -519,25 +654,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FormQLNhanVien.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhanVien.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhanVien.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAUwGIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T15:20:30.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "FormThemSanPham.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemSanPham.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemSanPham.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAAuwIgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T10:01:45.199Z",
@@ -545,38 +667,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "FormChupAnh.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormChupAnh.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormChupAnh.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwB4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:19:00.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FormQLNhaCungCap.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhaCungCap.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhaCungCap.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhaCungCap.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T03:04:32.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "FormChupAnh.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormChupAnh.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormChupAnh.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormChupAnh.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\Shared\\FormChupAnh.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\Shared\\FormChupAnh.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\Shared\\FormChupAnh.Designer.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T07:35:00.587Z",
@@ -584,24 +680,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FormMain_NhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\NhanVien\\FormMain_NhanVien.cs",
-              "RelativeDocumentMoniker": "Forms\\NhanVien\\FormMain_NhanVien.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\NhanVien\\FormMain_NhanVien.cs [Design]",
-              "RelativeToolTip": "Forms\\NhanVien\\FormMain_NhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T02:45:34.72Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "FormThemNhanVien.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemNhanVien.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemNhanVien.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemNhanVien.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormThemNhanVien.Designer.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAqwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T01:52:23.538Z",
@@ -609,12 +693,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "FormQLSanPham.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLSanPham.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLSanPham.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T01:39:59.308Z",
@@ -622,20 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T07:21:02.401Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "TransparentTextBox.cs [Design]",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\TransparentTextBox.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\TransparentTextBox.cs",
@@ -647,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "TransparentTextBox.cs",
               "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\CustomBackgroud\\TransparentTextBox.cs",
               "RelativeDocumentMoniker": "CustomBackgroud\\TransparentTextBox.cs",
@@ -660,24 +731,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "FormQLSanPham.resx",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.resx",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLSanPham.resx",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLSanPham.resx",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLSanPham.resx",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.resx",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.resx",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormQLSanPham.resx",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormQLSanPham.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-04-17T15:21:56.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "FormQLNhanVien.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormQLNhanVien.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormQLNhanVien.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormQLNhanVien.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainNhanVien\\FormQLNhanVien.Designer.cs",
               "ViewState": "AgIAAHwBAAAAAAAAAADgv4cBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T15:20:16.996Z",
@@ -685,12 +756,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "FormThemSanPham.Designer.cs",
-              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\QuanLy\\FormThemSanPham.Designer.cs",
-              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\FormThemSanPham.Designer.cs",
-              "RelativeToolTip": "Forms\\QuanLy\\FormThemSanPham.Designer.cs",
+              "DocumentMoniker": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.Designer.cs",
+              "ToolTip": "D:\\Code C#\\QLCHNuocGiaiKhat\\Forms\\QuanLy\\MainSanPham\\FormThemSanPham.Designer.cs",
+              "RelativeToolTip": "Forms\\QuanLy\\MainSanPham\\FormThemSanPham.Designer.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAADgv1sAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-17T15:21:22.717Z",

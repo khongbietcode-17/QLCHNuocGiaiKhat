@@ -35,6 +35,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.pnlTaiKhoan = new System.Windows.Forms.Panel();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.picLock = new System.Windows.Forms.PictureBox();
@@ -53,6 +54,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(31)))), ((int)(((byte)(68)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblThongBao);
@@ -71,7 +73,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 24.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 266);
+            this.label2.Location = new System.Drawing.Point(55, 248);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(260, 57);
             this.label2.TabIndex = 7;
@@ -81,7 +83,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // lblThongBao
             // 
             this.lblThongBao.ForeColor = System.Drawing.Color.Yellow;
-            this.lblThongBao.Location = new System.Drawing.Point(55, 436);
+            this.lblThongBao.Location = new System.Drawing.Point(55, 416);
             this.lblThongBao.Name = "lblThongBao";
             this.lblThongBao.Size = new System.Drawing.Size(260, 27);
             this.lblThongBao.TabIndex = 5;
@@ -93,7 +95,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(107, 546);
+            this.label1.Location = new System.Drawing.Point(107, 545);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 21);
             this.label1.TabIndex = 6;
@@ -107,7 +109,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(55, 466);
+            this.btnDangNhap.Location = new System.Drawing.Point(55, 447);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(260, 40);
             this.btnDangNhap.TabIndex = 4;
@@ -122,7 +124,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlMatKhau.Controls.Add(this.picLock);
             this.pnlMatKhau.Controls.Add(this.txtMatKhau);
             this.pnlMatKhau.Controls.Add(this.picEye);
-            this.pnlMatKhau.Location = new System.Drawing.Point(55, 392);
+            this.pnlMatKhau.Location = new System.Drawing.Point(55, 374);
             this.pnlMatKhau.Name = "pnlMatKhau";
             this.pnlMatKhau.Size = new System.Drawing.Size(260, 40);
             this.pnlMatKhau.TabIndex = 3;
@@ -143,7 +145,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.pnlTaiKhoan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlTaiKhoan.Controls.Add(this.picUser);
             this.pnlTaiKhoan.Controls.Add(this.txtTaiKhoan);
-            this.pnlTaiKhoan.Location = new System.Drawing.Point(55, 335);
+            this.pnlTaiKhoan.Location = new System.Drawing.Point(55, 317);
             this.pnlTaiKhoan.Name = "pnlTaiKhoan";
             this.pnlTaiKhoan.Size = new System.Drawing.Size(260, 40);
             this.pnlTaiKhoan.TabIndex = 2;
@@ -156,6 +158,21 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             this.txtTaiKhoan.Name = "txtTaiKhoan";
             this.txtTaiKhoan.Size = new System.Drawing.Size(206, 18);
             this.txtTaiKhoan.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(55, 495);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(260, 40);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Quét mã QR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -171,7 +188,7 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
             // picLogo
             // 
             this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
-            this.picLogo.Location = new System.Drawing.Point(72, 45);
+            this.picLogo.Location = new System.Drawing.Point(72, 27);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(220, 220);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,5 +256,6 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
         private Label label2;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }

@@ -304,6 +304,36 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coin2 {
+            get {
+                object obj = ResourceManager.GetObject("coin2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coin3 {
+            get {
+                object obj = ResourceManager.GetObject("coin3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coin4 {
+            get {
+                object obj = ResourceManager.GetObject("coin4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CỬA_HÀNG_NƯỚC_GIẢI_KHÁT {
             get {
                 object obj = ResourceManager.GetObject("CỬA HÀNG NƯỚC GIẢI KHÁT", resourceCulture);
@@ -444,6 +474,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hot_sale {
+            get {
+                object obj = ResourceManager.GetObject("hot-sale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOẠI_SẢN_PHẨM_BÁN_RA {
             get {
                 object obj = ResourceManager.GetObject("LOẠI SẢN PHẨM BÁN RA", resourceCulture);
@@ -537,6 +577,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap p60 {
             get {
                 object obj = ResourceManager.GetObject("p60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap p601 {
+            get {
+                object obj = ResourceManager.GetObject("p601", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -694,6 +744,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap u601 {
+            get {
+                object obj = ResourceManager.GetObject("u601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap update {
             get {
                 object obj = ResourceManager.GetObject("update", resourceCulture);
@@ -717,6 +777,16 @@ namespace QLCH_NuocGiaiKhat.Properties {
         internal static System.Drawing.Bitmap z {
             get {
                 object obj = ResourceManager.GetObject("z", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ZZZAS {
+            get {
+                object obj = ResourceManager.GetObject("ZZZAS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
