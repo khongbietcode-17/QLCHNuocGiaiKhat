@@ -27,7 +27,8 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                image.Save(ms, image.RawFormat);
+                // Mặc định dùng JPEG nếu không chắc
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                 return ms.ToArray();
             }
         }

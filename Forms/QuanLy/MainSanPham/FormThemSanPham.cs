@@ -17,12 +17,12 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
             InitializeComponent();
         }
-   
+
         private byte[] ImageToByteArray(Image image)
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                image.Save(ms, image.RawFormat);
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg); // OK sau khi khởi động lại
                 return ms.ToArray();
             }
         }

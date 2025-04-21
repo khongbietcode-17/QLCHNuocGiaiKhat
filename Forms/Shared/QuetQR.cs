@@ -1,31 +1,21 @@
 ﻿using AForge.Video.DirectShow;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
-using AForge.Video.DirectShow;
 using ZXing;
-using System.Data.SqlClient;
-
 
 namespace QLCH_NuocGiaiKhat.Forms.Shared
 {
-
-
-    public partial class QuetQR: Form
+    public partial class QuetQR : Form
     {
-
         private FilterInfoCollection cameras;
         private VideoCaptureDevice cam;
+
         public QuetQR()
         {
             InitializeComponent();
+            this.FormClosing += QuetQR_FormClosing;
         }
 
         private void QuetQR_Load(object sender, EventArgs e)
@@ -44,28 +34,44 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
         private void Cam_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-            picCam.Image = bitmap;
-           
+            try
+            {
+                Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
 
-            // Crop ảnh thành hình vuông (lấy vùng giữa)
-            int size = Math.Min(bitmap.Width, bitmap.Height);
-            int x = (bitmap.Width - size) / 2;
-            int y = (bitmap.Height - size) / 2;
-            Rectangle cropArea = new Rectangle(x, y, size, size);
+                // Crop ảnh thành hình vuông
+                int size = Math.Min(bitmap.Width, bitmap.Height);
+                int x = (bitmap.Width - size) / 2;
+                int y = (bitmap.Height - size) / 2;
+                Rectangle cropArea = new Rectangle(x, y, size, size);
+                Bitmap squareImage = bitmap.Clone(cropArea, bitmap.PixelFormat);
+                bitmap.Dispose();
 
-            Bitmap squareImage = bitmap.Clone(cropArea, bitmap.PixelFormat);
-
-            picCam.Image = squareImage;
-
-            // Giải phóng ảnh gốc nếu cần
-            bitmap.Dispose();
+                // Cập nhật ảnh trên UI an toàn từ thread khác
+                if (picCam.InvokeRequired)
+                {
+                    picCam.Invoke(new Action(() =>
+                    {
+                        if (picCam.Image != null) picCam.Image.Dispose();
+                        picCam.Image = squareImage;
+                    }));
+                }
+                else
+                {
+                    if (picCam.Image != null) picCam.Image.Dispose();
+                    picCam.Image = squareImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Có thể log nếu cần
+            }
         }
 
         private void cboCam_SelectedIndexChanged(object sender, EventArgs e)
         {
             StartCam(cboCam.SelectedIndex);
         }
+
         private void StartCam(int index)
         {
             if (cam != null && cam.IsRunning)
@@ -81,28 +87,62 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
 
         private void btnDong_Click(object sender, EventArgs e)
         {
-            if (cam != null && cam.IsRunning)
-                cam.SignalToStop();
-            this.Close();
+            Close();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (picCam.Image != null)
             {
-                BarcodeReader reader = new BarcodeReader();
-                var result = reader.Decode((Bitmap)picCam.Image);
-                if (result != null)
+                try
                 {
-                    string qrData = result.Text;
-                    timer1.Stop();
-                    cam.SignalToStop();
+                    Bitmap imgForScan = (Bitmap)picCam.Image.Clone();
+                    BarcodeReader reader = new BarcodeReader();
+                    var result = reader.Decode(imgForScan);
+                    imgForScan.Dispose();
 
-                    // Truyền mã QR (ID người dùng) ra ngoài
-                    this.Tag = qrData;
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
+                    if (result != null)
+                    {
+                        timer1.Stop();
+
+                        if (cam != null && cam.IsRunning)
+                        {
+                            cam.SignalToStop();
+                            cam.WaitForStop();
+                        }
+
+                        this.Tag = result.Text;
+                        this.DialogResult = DialogResult.OK;
+                        this.Close();
+                    }
                 }
+                catch (Exception ex)
+                {
+                    // Log nếu cần
+                }
+            }
+        }
+
+        private void QuetQR_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            timer1.Stop();
+
+            if (cam != null)
+            {
+                if (cam.IsRunning)
+                {
+                    cam.SignalToStop();
+                    cam.WaitForStop();
+                }
+
+                cam.NewFrame -= Cam_NewFrame;
+                cam = null;
+            }
+
+            if (picCam.Image != null)
+            {
+                picCam.Image.Dispose();
+                picCam.Image = null;
             }
         }
     }

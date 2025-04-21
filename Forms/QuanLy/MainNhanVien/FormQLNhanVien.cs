@@ -26,71 +26,117 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         //CÁC LOAD 
         private void FormQLNhanVien_Load(object sender, EventArgs e)
         {
-          
+
             LoadDanhSachNguoiDung();
             LoadNguoiDungCard();
+            LoadComboBoxChucVu(); // gọi trước
 
+          cbChucVu.Items.Clear();
+    cbChucVu.Items.Add("Tất cả"); // mặc định đầu tiên
 
-            flowNV.AutoScroll = true; // ✅ phải có dòng này
-            ScrollBarHider.HideVerticalScrollBar(flowNV); // ẩn thanh cuộn
-            flowNV.Scroll += (s, ev) =>
+    try
+    {
+        using (SqlConnection conn = new SqlConnection(chuoiketnoi))
+        {
+            string query = "SELECT DISTINCT VaiTro FROM NguoiDung";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
             {
-                ScrollBarHider.HideVerticalScrollBar(flowNV);
-            };
-            flowNV.Layout += (s, ev) =>
-            {
-                ScrollBarHider.HideVerticalScrollBar(flowNV);
-            };
-
+                string vaitro = reader["VaiTro"].ToString();
+                if (!string.IsNullOrWhiteSpace(vaitro))
+                {
+                    cbChucVu.Items.Add(vaitro);
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Lỗi khi tải danh sách chức vụ: " + ex.Message);
+    }
         }
         private void LoadDanhSachNguoiDung()
         {
             string query = "SELECT \r\n   nd.ID,\r\n    nd.Taikhoan,\r\n    nd.Matkhau,\r\n    nd.Vaitro,\r\n    tt.HoTen,\r\n    tt.Email,\r\n    tt.SoDienThoai,\r\n    tt.DiaChi,\r\n    tt.Anh\r\nFROM NguoiDung nd\r\nINNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung";
         }
-        private void LoadNguoiDungCard(string keyword = "")
+        private void LoadComboBoxChucVu()
+        {
+            cbChucVu.Items.Clear();
+            cbChucVu.Items.Add("Tất cả"); // mặc định đầu tiên
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(chuoiketnoi))
+                {
+                    string query = "SELECT DISTINCT VaiTro FROM NguoiDung";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string vaitro = reader["VaiTro"].ToString();
+                        if (!string.IsNullOrWhiteSpace(vaitro))
+                        {
+                            cbChucVu.Items.Add(vaitro);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách chức vụ: " + ex.Message);
+            }
+
+        }
+        private void LoadNguoiDungCard(string keyword = "", string vaitro = "Tất cả")
         {
             flowNV.Controls.Clear();
+
             string query = @"
-    SELECT 
-        nd.ID,
-        nd.Taikhoan,
-        nd.Matkhau,
-        nd.Vaitro,
-        tt.HoTen,
-        tt.Email,
-        tt.SoDienThoai,
-        tt.DiaChi,
-        tt.Anh
-    FROM NguoiDung nd
-    INNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung
-    WHERE 
-        tt.HoTen COLLATE Latin1_General_CI_AI LIKE @keyword
-        OR nd.Taikhoan COLLATE Latin1_General_CI_AI LIKE @keyword
-        OR tt.Email COLLATE Latin1_General_CI_AI LIKE @keyword
-";
+        SELECT 
+            nd.ID,
+            nd.Taikhoan,
+            nd.Matkhau,
+            nd.Vaitro,
+            tt.HoTen,
+            tt.Email,
+            tt.SoDienThoai,
+            tt.DiaChi,
+            tt.Anh
+        FROM NguoiDung nd
+        INNER JOIN ThongTinNguoiDung tt ON nd.ID = tt.IDNguoiDung
+        WHERE 
+            (tt.HoTen COLLATE Latin1_General_CI_AI LIKE @keyword
+            OR nd.Taikhoan COLLATE Latin1_General_CI_AI LIKE @keyword
+            OR tt.Email COLLATE Latin1_General_CI_AI LIKE @keyword)
+            " + (vaitro != "Tất cả" ? " AND nd.VaiTro = @vaitro" : "");
 
             using (SqlConnection conn = new SqlConnection(chuoiketnoi))
             {
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                if (vaitro != "Tất cả")
+                    cmd.Parameters.AddWithValue("@vaitro", vaitro);
+
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
-                
+
                 while (reader.Read())
                 {
                     ucNguoiDung ndCard = new ucNguoiDung();
 
-                    // Gán dữ liệu từ SQL vào control của UserControl
-                    ndCard.lblID.Text = "Mã ID: "+reader["ID"].ToString();
-                 
-                    ndCard.lblHoTen.Text = "" + reader["HoTen"].ToString();
+                    ndCard.lblID.Text = "Mã ID: " + reader["ID"].ToString();
+                    ndCard.lblHoTen.Text = reader["HoTen"].ToString();
                     ndCard.lblDiaChi.Text = "Địa chỉ: " + reader["DiaChi"].ToString();
                     ndCard.lblSDT.Text = "Số điện thoại: " + reader["SoDienThoai"].ToString();
                     ndCard.lblEmail.Text = "Email: " + reader["Email"].ToString();
                     ndCard.lblVaiTro.Text = "Chức vụ: " + reader["Vaitro"].ToString();
-
                     ndCard.Tag = reader["ID"].ToString();
-                    // Xử lý hình ảnh
+
                     if (reader["Anh"] != DBNull.Value)
                     {
                         byte[] imgBytes = (byte[])reader["Anh"];
@@ -100,13 +146,13 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                         }
                     }
 
-
                     ndCard.Click += NdCard_Click;
-                    // Thêm thẻ vào FlowLayoutPanel
                     flowNV.Controls.Add(ndCard);
                 }
             }
         }
+
+
         //Không cần quan tâm code này ( Ẩn thanh cuộn nhưng bị lỗi rồi :) ) 
         public class ScrollBarHider
         {
@@ -311,7 +357,8 @@ WHERE nd.ID = @ID";
         private void txtTenTimKiem_TextChanged(object sender, EventArgs e)
         {
             string keyword = txtTenTimKiem.Text.Trim();
-            LoadNguoiDungCard(keyword); // gọi lại Load với từ khóa tìm kiếm
+            string vaitro = cbChucVu.SelectedItem?.ToString() ?? "Tất cả";
+            LoadNguoiDungCard(keyword, vaitro);
 
         }
         public static string RemoveDiacritics(string text)
@@ -327,9 +374,6 @@ WHERE nd.ID = @ID";
                 }
             }
             return sb.ToString().Normalize(NormalizationForm.FormC);
-        }
-        private void cboVaiTroLoc_SelectedIndexChanged(object sender, EventArgs e)
-        {
         }
 
         private void btnChonAnh_Click(object sender, EventArgs e)
@@ -352,9 +396,13 @@ WHERE nd.ID = @ID";
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+  
 
+        private void cbChucVu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string keyword = txtTenTimKiem.Text.Trim();
+            string vaitro = cbChucVu.SelectedItem?.ToString() ?? "Tất cả";
+            LoadNguoiDungCard(keyword, vaitro);
         }
     }
 }

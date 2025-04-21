@@ -10,7 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 using QLCH_NuocGiaiKhat.Forms.QuanLy;
-using System.Runtime.InteropServices;
+
 namespace QLCH_NuocGiaiKhat.Forms.QuanLy
 {
 
@@ -32,9 +32,41 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             string query = "SELECT * FROM SanPham";
 
         }
+        private void LoadComboBoxFilters()
+        {
+            using (SqlConnection conn = new SqlConnection(chuoiketnoi))
+            {
+                conn.Open();
+
+                // Load DonViTinh
+                SqlCommand cmdDVT = new SqlCommand("SELECT DISTINCT DonViTinh FROM SanPham", conn);
+                SqlDataReader readerDVT = cmdDVT.ExecuteReader();
+                cbDonViTinh.Items.Clear();
+                cbDonViTinh.Items.Add("Tất cả");
+                while (readerDVT.Read())
+                {
+                    cbDonViTinh.Items.Add(readerDVT.GetString(0));
+                }
+                readerDVT.Close();
+
+                // Load Loai
+                SqlCommand cmdLoai = new SqlCommand("SELECT DISTINCT Loai FROM SanPham", conn);
+                SqlDataReader readerLoai = cmdLoai.ExecuteReader();
+                cbLoai.Items.Clear();
+                cbLoai.Items.Add("Tất cả");
+                while (readerLoai.Read())
+                {
+                    cbLoai.Items.Add(readerLoai.GetString(0));
+                }
+                readerLoai.Close();
+            }
+
+            cbDonViTinh.SelectedIndex = 0;
+            cbLoai.SelectedIndex = 0;
+        }
         private void FormQLSanPham_Load(object sender, EventArgs e)
         {
-
+            LoadComboBoxFilters();
             LoadDanhSachSanPham();
             LoadSanPhamCard();
 
@@ -49,7 +81,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
                 ScrollBarHider.HideVerticalScrollBar(flowSanPham);
             };
         }
-
+        //Không cần quan tâm cái này 
         public class ScrollBarHider
         {
             [DllImport("user32.dll")]
@@ -65,58 +97,7 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         }
 
 
-
-
-        private void LoadSanPhamCard()
-        {
-            flowSanPham.Controls.Clear();
-
-            string query = "SELECT * FROM SanPham";
-
-            using (SqlConnection conn = new SqlConnection(chuoiketnoi))
-            {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    ucSanPham spCard = new ucSanPham();
-
-                    // Gán dữ liệu từ SQL vào control của UserControl
-                    spCard.lblMaSP.Text = "Mã Sản Phẩm: " + reader["MaSP"].ToString();
-                    spCard.lblTenSP.Text = reader["TenSanPham"].ToString();
-                 
-                    spCard.lblDonViTinh.Text = "Đơn Vị Tính: " + reader["DonViTinh"].ToString();
-                  
-                    spCard.lblSoLuong.Text = "Số Lượng: " + reader["SoLuong"].ToString();
-                    spCard.lblMaNCC.Text = "Mã NCC: " + reader["MaNCC"].ToString();
-                   
-
-                    // Lưu MaSP để xử lý khi click
-                    spCard.Tag = reader["MaSP"].ToString();
-
-                    // Xử lý hình ảnh
-                    if (reader["HinhAnh"] != DBNull.Value)
-                    {
-                        byte[] imgBytes = (byte[])reader["HinhAnh"];
-                        using (MemoryStream ms = new MemoryStream(imgBytes))
-                        {
-                            spCard.picSanPham.Image = Image.FromStream(ms);
-                        }
-                    }
-
-                    // Bắt sự kiện click
-                    spCard.Click += SpCard_Click;
-
-                    // Thêm thẻ vào FlowLayoutPanel
-                    flowSanPham.Controls.Add(spCard);
-                }
-
-                reader.Close();
-            }
-        
-        }
+       
 
         private void SpCard_Click(object sender, EventArgs e)
         {
@@ -329,7 +310,15 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
             }
         }
 
+        private void cbDonViTinh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadSanPhamCard(txtTimKiem.Text.Trim());
+        }
 
+        private void cbLoai_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadSanPhamCard(txtTimKiem.Text.Trim());
+        }
     }
 }
 

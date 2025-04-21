@@ -72,6 +72,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuaHangNuocGiaiKhatDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CuaHangNuocGiaiKhatDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CustomBackgroud\CirclePictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -86,6 +96,12 @@
     </Compile>
     <Compile Include="Forms\NhanVien\FormMain_NhanVien.Designer.cs">
       <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\QuanLy\MainBaoCao\FormBaoCaoTonKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuanLy\MainBaoCao\FormBaoCaoTonKho.Designer.cs">
+      <DependentUpon>FormBaoCaoTonKho.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\QuanLy\MainSanPham\FormChiTietSanPham.cs">
       <SubType>Form</SubType>
@@ -170,6 +186,9 @@
     <EmbeddedResource Include="Forms\NhanVien\FormMain_NhanVien.resx">
       <DependentUpon>FormMain_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuanLy\MainBaoCao\FormBaoCaoTonKho.resx">
+      <DependentUpon>FormBaoCaoTonKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuanLy\MainSanPham\FormChiTietSanPham.resx">
       <DependentUpon>FormChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,7 +241,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rptTonKho.rdlc" />
     <None Include="app.config" />
+    <None Include="CuaHangNuocGiaiKhatDataSet1.xsc">
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CuaHangNuocGiaiKhatDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuaHangNuocGiaiKhatDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CuaHangNuocGiaiKhatDataSet1.xss">
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CuaHangNuocGiaiKhatDataSet11.xsc">
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="CuaHangNuocGiaiKhatDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CuaHangNuocGiaiKhatDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CuaHangNuocGiaiKhatDataSet11.xss">
+      <DependentUpon>CuaHangNuocGiaiKhatDataSet11.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

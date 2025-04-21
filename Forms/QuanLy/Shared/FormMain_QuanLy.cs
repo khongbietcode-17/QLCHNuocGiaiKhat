@@ -259,5 +259,10 @@ namespace QLCH_NuocGiaiKhat.Forms.QuanLy
         {
 
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

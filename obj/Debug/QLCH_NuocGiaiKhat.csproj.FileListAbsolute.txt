@@ -52,3 +52,4 @@ D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\dje\QLCH_NuocGiaiKhat.resources.dll
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_Nuo.D7C418A2.Up2Date
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.exe
 D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.pdb
+D:\Code C#\QLCHNuocGiaiKhat\obj\Debug\QLCH_NuocGiaiKhat.Forms.QuanLy.MainBaoCao.FormBaoCaoTonKho.resources

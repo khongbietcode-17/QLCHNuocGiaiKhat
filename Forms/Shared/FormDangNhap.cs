@@ -1,22 +1,21 @@
-﻿using QLCH_NuocGiaiKhat.CustomBackgroud;
+﻿using AForge.Video;
+using AForge.Video.DirectShow;
+using QLCH_NuocGiaiKhat.CustomBackgroud;
 using QLCH_NuocGiaiKhat.Forms.NhanVien;
 using QLCH_NuocGiaiKhat.Forms.QuanLy;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace QLCH_NuocGiaiKhat.Forms.Shared
 {
-    public partial class FormDangNhap: Form
+    public partial class FormDangNhap : Form
     {
-        string chuoiketnoi= "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
+        string chuoiketnoi = "Data Source=LAPTOP-KNSIOEA3;Initial Catalog=CuaHangNuocGiaiKhat;Integrated Security=True";
         private bool matKhauDangAn = true;
+        private VideoCaptureDevice videoSource;
         public FormDangNhap()
         {
             InitializeComponent();
@@ -25,21 +24,17 @@ namespace QLCH_NuocGiaiKhat.Forms.Shared
         private void FormDangNhap_Load(object sender, EventArgs e)
         {
             Rectangle screen = Screen.PrimaryScreen.Bounds;
-
-            // Gán kích thước form bằng với màn hình
             this.Width = screen.Width;
             this.Height = screen.Height;
-
-            // (Tùy chọn) Đặt form ở vị trí góc trái trên cùng
             this.Location = new Point(0, 0);
+
             GradientPanel panelChinh = new GradientPanel();
-            panelChinh.Dock = DockStyle.Fill; // Dock vào toàn bộ form
+            panelChinh.Dock = DockStyle.Fill;
             this.Controls.Add(panelChinh);
             panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
             panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
+            this.FormClosing += FormClosingHandler;
         }
-
-
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -65,56 +60,55 @@ WHERE Nguoidung.Taikhoan = @tk AND Nguoidung.Matkhau = @mk";
                     string vaitro = reader["Vaitro"].ToString();
                     string hoten = reader["HoTen"].ToString();
 
+                    this.Hide();
+
                     if (vaitro == "QuanLy")
                     {
-                        FormMain_QuanLy formQL = new FormMain_QuanLy(hoten);
-                        this.Hide();
-                        formQL.ShowDialog();
-                        this.Show();
+                        using (FormMain_QuanLy formQL = new FormMain_QuanLy(hoten))
+                            formQL.ShowDialog();
                     }
                     else if (vaitro == "NhanVien")
                     {
-                        FormMain_NhanVien formNV = new FormMain_NhanVien(hoten);
-                        this.Hide();
-                        formNV.ShowDialog();
-                        this.Show();
+                        using (FormMain_NhanVien formNV = new FormMain_NhanVien(hoten))
+                            formNV.ShowDialog();
                     }
+
+                    this.Show();
                 }
                 else
                 {
                     lblThongBao.Text = "Sai tên đăng nhập hoặc mật khẩu!";
-                    lblThongBao.ForeColor = System.Drawing.Color.Red;
+                    lblThongBao.ForeColor = Color.Red;
                 }
+
                 reader.Close();
-                conn.Close();
             }
         }
 
         private void picEye_Click(object sender, EventArgs e)
         {
             matKhauDangAn = !matKhauDangAn;
-
             txtMatKhau.UseSystemPasswordChar = matKhauDangAn;
-
-            // Đổi hình icon nếu bạn có thêm ảnh mắt mở và mắt đóng
-            picEye.Image = matKhauDangAn
-               ? Properties.Resources.eye // mắt đang ẩn
-               : Properties.Resources.hidden; // mắt đang hiện
+            picEye.Image = matKhauDangAn ? Properties.Resources.eye : Properties.Resources.hidden;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Close(); // Đóng form hiện tại
+            this.Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e) { }
+        private void FormClosingHandler(object sender, FormClosingEventArgs e)
         {
-
+            if (videoSource != null && videoSource.IsRunning)
+            {
+                videoSource.SignalToStop();
+                videoSource.WaitForStop();
+                videoSource = null;
+            }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            QuetQR f = new QuetQR();
             using (var formQR = new QuetQR())
             {
                 if (formQR.ShowDialog() == DialogResult.OK)
@@ -139,20 +133,24 @@ WHERE Nguoidung.ID = @id";
                             string vaitro = reader["Vaitro"].ToString();
                             string hoten = reader["HoTen"].ToString();
 
+                            this.Hide(); // Ẩn form đăng nhập
+
                             if (vaitro == "QuanLy")
                             {
-                                FormMain_QuanLy formQL = new FormMain_QuanLy(hoten);
-                                this.Hide();
-                                formQL.ShowDialog();
-                                this.Show();
+                                using (FormMain_QuanLy formQL = new FormMain_QuanLy(hoten))
+                                {
+                                    formQL.ShowDialog();
+                                }
                             }
                             else if (vaitro == "NhanVien")
                             {
-                                FormMain_NhanVien formNV = new FormMain_NhanVien(hoten);
-                                this.Hide();
-                                formNV.ShowDialog();
-                                this.Show();
+                                using (FormMain_NhanVien formNV = new FormMain_NhanVien(hoten))
+                                {
+                                    formNV.ShowDialog();
+                                }
                             }
+
+                            this.Show(); // Hiện lại form đăng nhập
                         }
                         else
                         {
